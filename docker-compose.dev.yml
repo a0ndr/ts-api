@@ -1,0 +1,68 @@
+services:
+  db:
+    image: mariadb:10.11.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=api
+    ports:
+      - "8081:3306"
+  pma:
+    image: phpmyadmin
+    environment:
+      - PMA_HOST=db
+    ports:
+      - "8082:80"
+    depends_on:
+      - db
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "8083:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+#    networks:
+#      - ts
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "8084:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+#    networks:
+#      - ts
+
+  jaeger:
+    image: jaegertracing/jaeger:latest
+    command: ["--config", "/etc/jaeger/config.yml"]
+    ports:
+      - "8085:16686"  # Jaeger UI
+      - "8086:14268"  # Jaeger OTLP endpoint
+      - "8087:4317"    # OTLP gRPC traces
+      - "8088:4318"    # OTLP HTTP traces
+      - "8089:8888"
+      - "8090:8889"
+    environment:
+      - METRICS_STORAGE_TYPE=prometheus
+      - PROMETHEUS_SERVER_URL=http://prometheus:9090
+      - PROMETHEUS_QUERY_NAMESPACE=${PROMETHEUS_QUERY_NAMESPACE:-}
+      - PROMETHEUS_QUERY_DURATION_UNIT=${PROMETHEUS_QUERY_DURATION_UNIT:-}
+      - PROMETHEUS_QUERY_NORMALIZE_CALLS=true
+      - PROMETHEUS_QUERY_NORMALIZE_DURATION=true
+    volumes:
+      - ./jaeger.yml:/etc/jaeger/config.yml
+
+volumes:
+    db_data:
+    grafana-data:
+    tempo-data:
+
+networks:
+  ts:
+    name: ts

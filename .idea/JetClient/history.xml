@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1733580349980" />
+          <option name="id" value="7d0bc6f0-658f-43aa-b77e-c3e6ca793a84" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImludmFsaWQgcmVxdWVzdCBib2R5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;invalid request body&quot;&#10;}" />
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="44" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 14:05:49 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="32" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7d0bc6f0-658f-43aa-b77e-c3e6ca793a84" />
+              <option name="message" value="Internal Server Error" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;invalid request body&quot;}" />
+              <option name="size" value="32" />
+              <option name="time" value="55" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733580493390" />
+          <option name="id" value="f1fd5a81-a8ce-4742-b4da-577187fe3d52" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTA3VDE1OjIzOjEzKzAxOjAwIiwidG9rZW4iOiJiMjc3MzNhOC1iNGE0LTExZWYtYmU5Yy0wMDBjMjkyMzI0ZjYiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBYTMzMmU4OTEtOTBhZC00OWU0LTk2NDItYjlmMTcxNjVlZjI0XHUwMDI2c3RhdGU9QW9hRkFBaUVNZEdzWnFBVyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-07T15:23:13+01:00&quot;,&#10;  &quot;token&quot;: &quot;b27733a8-b4a4-11ef-be9c-000c292324f6&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3Aa332e891-90ad-49e4-9642-b9f17165ef24&amp;state=AoaFAAiEMdGsZqAW&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 14:08:13 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f1fd5a81-a8ce-4742-b4da-577187fe3d52" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-07T15:23:13+01:00&quot;,&quot;token&quot;:&quot;b27733a8-b4a4-11ef-be9c-000c292324f6&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3Aa332e891-90ad-49e4-9642-b9f17165ef24\u0026state=AoaFAAiEMdGsZqAW&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="931" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733580514534" />
+          <option name="id" value="d29bc286-5abc-4a96-b04e-b030a2e9ed76" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTA3VDE1OjIzOjM0KzAxOjAwIiwidG9rZW4iOiJiZjE0OWI3My1iNGE0LTExZWYtYmU5Yy0wMDBjMjkyMzI0ZjYiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNGFlODdkNDQtYzAxMS00ODBlLTg5MTEtYTEyNjg4ZjM0MGZmXHUwMDI2c3RhdGU9WnpZZ0hUbmtsd0Z1ZEVXeiJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-07T15:23:34+01:00&quot;,&#10;  &quot;token&quot;: &quot;bf149b73-b4a4-11ef-be9c-000c292324f6&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A4ae87d44-c011-480e-8911-a12688f340ff&amp;state=ZzYgHTnklwFudEWz&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 14:08:34 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d29bc286-5abc-4a96-b04e-b030a2e9ed76" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-07T15:23:34+01:00&quot;,&quot;token&quot;:&quot;bf149b73-b4a4-11ef-be9c-000c292324f6&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A4ae87d44-c011-480e-8911-a12688f340ff\u0026state=ZzYgHTnklwFudEWz&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="516" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595291533" />
+          <option name="id" value="95b501b2-3ce6-4eee-916e-bdf91d69cbb5" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTA3VDE5OjI5OjUxKzAxOjAwIiwidG9rZW4iOiIyNmRhYmQwNi1iNGM3LTExZWYtYjg1ZS0wMDBjMjkyMzI0ZjYiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBOWY1ZjIyMWYtN2JlOC00Y2U5LTkyNzktNTFhNmViOTlhODRjXHUwMDI2c3RhdGU9T2hzUmJ6YUN6eFZSa1JyRyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-07T19:29:51+01:00&quot;,&#10;  &quot;token&quot;: &quot;26dabd06-b4c7-11ef-b85e-000c292324f6&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A9f5f221f-7be8-4ce9-9279-51a6eb99a84c&amp;state=OhsRbzaCzxVRkRrG&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="13" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:14:51 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="95b501b2-3ce6-4eee-916e-bdf91d69cbb5" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-07T19:29:51+01:00&quot;,&quot;token&quot;:&quot;26dabd06-b4c7-11ef-b85e-000c292324f6&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A9f5f221f-7be8-4ce9-9279-51a6eb99a84c\u0026state=OhsRbzaCzxVRkRrG&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="847" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595411511" />
+          <option name="id" value="cf9cac2b-77d3-40d3-8c9c-37114fc3dd97" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTEuNjcxKzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUxLjY3MSswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUxLjY3NCswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1MS42NzQrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:51.671+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:51.671+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:51.674+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:51.674+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:51 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="cf9cac2b-77d3-40d3-8c9c-37114fc3dd97" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:51.671+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:51.671+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:51.674+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:51.674+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="236" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595412059" />
+          <option name="id" value="d50cd71c-7f47-4467-8f25-a958144b11ee" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTIuMjE3KzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUyLjIxNyswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUyLjIxOSswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1Mi4yMTkrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:52.217+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:52.217+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:52.219+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:52.219+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="9" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:52 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="d50cd71c-7f47-4467-8f25-a958144b11ee" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:52.217+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:52.217+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:52.219+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:52.219+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="182" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595412869" />
+          <option name="id" value="245e0c02-05bb-40ed-9462-c42d55c48e78" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTMuMDMzKzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUzLjAzMyswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUzLjAzNCswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1My4wMzQrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.033+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.033+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.034+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.034+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="14" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:52 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="245e0c02-05bb-40ed-9462-c42d55c48e78" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.033+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.033+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.034+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.034+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="193" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595413022" />
+          <option name="id" value="4f68c697-f450-4da5-9aa2-78dba4ade7a5" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTMuMTg4KzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUzLjE4OCswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUzLjE5MSswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1My4xOTErMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.188+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.188+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.191+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.191+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4f68c697-f450-4da5-9aa2-78dba4ade7a5" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.188+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.188+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.191+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.191+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="177" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595413203" />
+          <option name="id" value="f7c5e873-915d-4c99-90ce-3b48951e9bf7" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTMuMzU5KzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUzLjM1OSswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUzLjM2MyswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1My4zNjMrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.359+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.359+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.363+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.363+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="7" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="f7c5e873-915d-4c99-90ce-3b48951e9bf7" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.359+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.359+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.363+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.363+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="179" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595413362" />
+          <option name="id" value="a05564f4-b96c-4404-a2e6-34b940da7e4d" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTMuNTI1KzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUzLjUyNSswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUzLjUyOCswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1My41MjgrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.525+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.525+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.528+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.528+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a05564f4-b96c-4404-a2e6-34b940da7e4d" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.525+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.525+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.528+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.528+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="185" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595413520" />
+          <option name="id" value="e2ab7cdb-1e62-4a90-8c13-46539bd87aca" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTMuNjgxKzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUzLjY4MSswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUzLjY4MyswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1My42ODMrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.681+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.681+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.683+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.683+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="e2ab7cdb-1e62-4a90-8c13-46539bd87aca" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.681+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.681+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.683+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.683+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="180" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595413672" />
+          <option name="id" value="2ac97b17-785b-4af2-98c2-897d9fad3f72" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTMuODMyKzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjUzLjgzMiswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjUzLjgzNSswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1My44MzUrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.832+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.832+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:53.835+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:53.835+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2ac97b17-785b-4af2-98c2-897d9fad3f72" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.832+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.832+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:53.835+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:53.835+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="180" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595413908" />
+          <option name="id" value="0cff4365-9089-4605-a685-2c34df23d538" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTQuMDcwKzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjU0LjA3MCswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjU0LjA3MiswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1NC4wNzIrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:54.070+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:54.070+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:54.072+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:54.072+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0cff4365-9089-4605-a685-2c34df23d538" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:54.070+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:54.070+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:54.072+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:54.072+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="186" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595414170" />
+          <option name="id" value="c967f4a9-1bd5-401c-ba27-20c2f610eb95" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjQtMTItMjdUMTk6MTY6NTQuMzMxKzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI0LTEyLTA3VDE5OjE2OjU0LjMzMSswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wN1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA2VDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI0LTEyLTI3VDE5OjE2OjU0LjMzMyswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNC0xMi0wN1QxOToxNjo1NC4zMzMrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI0LTEyLTA3VDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjQtMTItMDdUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNC0xMi0wNlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:54.331+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:54.331+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2024-12-27T19:16:54.333+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2024-12-07T19:16:54.333+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-07T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2024-12-06T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:16:54 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c967f4a9-1bd5-401c-ba27-20c2f610eb95" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:54.331+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:54.331+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2024-12-27T19:16:54.333+01:00&quot;,&quot;dateUpdated&quot;:&quot;2024-12-07T19:16:54.333+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-07T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2024-12-06T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="190" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595511529" />
+          <option name="id" value="2864f50a-e378-463f-8014-0e15ce8f5acb" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK4011000000004145138420" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK4011000000004145138420" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50Ijp7ImliYW4iOiJTSzQwMTEwMDAwMDAwMDQxNDUxMzg0MjAiLCJjdXJyZW5jeSI6IkVVUiJ9LCJ0cmFuc2FjdGlvbnMiOlt7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNTYxMzYiLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4NzA1MzgxNjYvU1MyMjc2NTA0OTcwL0tTMDMwOCIsInZhcmlhYmxlU3ltYm9sIjoiODg3MDUzODE2NiIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi00Ni45OSwiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAyIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzAzMTEwMDAwMDAwMDgzMzIxOTg5ODgifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtODMzMjE5ODk4OCIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfSx7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNjg5NDciLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4MDA3NDQ3NTkvU1M4OTMxMDE4OTQwL0tTMDU1OCIsInZhcmlhYmxlU3ltYm9sIjoiODgwMDc0NDc1OSIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi02NC41MywiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAxIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzU5MTEwMDAwMDAwMDc0MzU5MDAyMjkifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtNzQzNTkwMDIyOSIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfV19" />
+              <option name="bodyString" value="{&#10;  &quot;account&quot;: {&#10;    &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;    &quot;currency&quot;: &quot;EUR&quot;&#10;  },&#10;  &quot;transactions&quot;: [&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960056136&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8870538166/SS2276504970/KS0308&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8870538166&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -46.99,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 2&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK0311000000008332198988&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-8332198988&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960068947&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8800744759/SS8931018940/KS0558&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8800744759&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -64.53,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK5911000000007435900229&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-7435900229&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:18:31 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1581" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2864f50a-e378-463f-8014-0e15ce8f5acb" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;account&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;transactions&quot;:[{&quot;transactionId&quot;:&quot;173352960056136&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8870538166/SS2276504970/KS0308&quot;,&quot;variableSymbol&quot;:&quot;8870538166&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-46.99,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 2&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK0311000000008332198988&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-8332198988&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173352960068947&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8800744759/SS8931018940/KS0558&quot;,&quot;variableSymbol&quot;:&quot;8800744759&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-64.53,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK5911000000007435900229&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-7435900229&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false}]}" />
+              <option name="size" value="1581" />
+              <option name="time" value="328" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595513699" />
+          <option name="id" value="c47ed714-5851-414c-956c-8421b445a7e6" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK4011000000004145138420" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK4011000000004145138420" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50Ijp7ImliYW4iOiJTSzQwMTEwMDAwMDAwMDQxNDUxMzg0MjAiLCJjdXJyZW5jeSI6IkVVUiJ9LCJ0cmFuc2FjdGlvbnMiOlt7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNTYxMzYiLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4NzA1MzgxNjYvU1MyMjc2NTA0OTcwL0tTMDMwOCIsInZhcmlhYmxlU3ltYm9sIjoiODg3MDUzODE2NiIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi00Ni45OSwiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAyIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzAzMTEwMDAwMDAwMDgzMzIxOTg5ODgifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtODMzMjE5ODk4OCIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfSx7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNjg5NDciLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4MDA3NDQ3NTkvU1M4OTMxMDE4OTQwL0tTMDU1OCIsInZhcmlhYmxlU3ltYm9sIjoiODgwMDc0NDc1OSIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi02NC41MywiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAxIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzU5MTEwMDAwMDAwMDc0MzU5MDAyMjkifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtNzQzNTkwMDIyOSIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfV19" />
+              <option name="bodyString" value="{&#10;  &quot;account&quot;: {&#10;    &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;    &quot;currency&quot;: &quot;EUR&quot;&#10;  },&#10;  &quot;transactions&quot;: [&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960056136&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8870538166/SS2276504970/KS0308&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8870538166&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -46.99,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 2&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK0311000000008332198988&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-8332198988&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960068947&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8800744759/SS8931018940/KS0558&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8800744759&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -64.53,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK5911000000007435900229&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-7435900229&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:18:33 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1581" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c47ed714-5851-414c-956c-8421b445a7e6" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;account&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;transactions&quot;:[{&quot;transactionId&quot;:&quot;173352960056136&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8870538166/SS2276504970/KS0308&quot;,&quot;variableSymbol&quot;:&quot;8870538166&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-46.99,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 2&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK0311000000008332198988&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-8332198988&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173352960068947&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8800744759/SS8931018940/KS0558&quot;,&quot;variableSymbol&quot;:&quot;8800744759&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-64.53,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK5911000000007435900229&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-7435900229&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false}]}" />
+              <option name="size" value="1581" />
+              <option name="time" value="348" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595520728" />
+          <option name="id" value="b1fb29e2-eb05-4d2b-808e-6a4730a1662c" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK4011000000004145138420" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK4011000000004145138420" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50Ijp7ImliYW4iOiJTSzQwMTEwMDAwMDAwMDQxNDUxMzg0MjAiLCJjdXJyZW5jeSI6IkVVUiJ9LCJ0cmFuc2FjdGlvbnMiOlt7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNTYxMzYiLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4NzA1MzgxNjYvU1MyMjc2NTA0OTcwL0tTMDMwOCIsInZhcmlhYmxlU3ltYm9sIjoiODg3MDUzODE2NiIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi00Ni45OSwiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAyIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzAzMTEwMDAwMDAwMDgzMzIxOTg5ODgifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtODMzMjE5ODk4OCIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfSx7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNjg5NDciLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4MDA3NDQ3NTkvU1M4OTMxMDE4OTQwL0tTMDU1OCIsInZhcmlhYmxlU3ltYm9sIjoiODgwMDc0NDc1OSIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi02NC41MywiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAxIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzU5MTEwMDAwMDAwMDc0MzU5MDAyMjkifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtNzQzNTkwMDIyOSIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfV19" />
+              <option name="bodyString" value="{&#10;  &quot;account&quot;: {&#10;    &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;    &quot;currency&quot;: &quot;EUR&quot;&#10;  },&#10;  &quot;transactions&quot;: [&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960056136&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8870538166/SS2276504970/KS0308&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8870538166&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -46.99,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 2&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK0311000000008332198988&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-8332198988&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960068947&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8800744759/SS8931018940/KS0558&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8800744759&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -64.53,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK5911000000007435900229&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-7435900229&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:18:40 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1581" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b1fb29e2-eb05-4d2b-808e-6a4730a1662c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;account&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;transactions&quot;:[{&quot;transactionId&quot;:&quot;173352960056136&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8870538166/SS2276504970/KS0308&quot;,&quot;variableSymbol&quot;:&quot;8870538166&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-46.99,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 2&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK0311000000008332198988&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-8332198988&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173352960068947&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8800744759/SS8931018940/KS0558&quot;,&quot;variableSymbol&quot;:&quot;8800744759&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-64.53,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK5911000000007435900229&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-7435900229&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false}]}" />
+              <option name="size" value="1581" />
+              <option name="time" value="364" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595536345" />
+          <option name="id" value="002bb2f8-bce6-4faa-ab04-db90fcd41206" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiMGQzODUxMGIxN2I0NDVkYyIsInRyYWNlSWQiOiJhNjc5YTJjMTJhMTYxOGJlYjc3NzlhMzY0ODI2NGU4OCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;0d38510b17b445dc&quot;,&#10;  &quot;traceId&quot;: &quot;a679a2c12a1618beb7779a3648264e88&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:18:56 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="002bb2f8-bce6-4faa-ab04-db90fcd41206" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;0d38510b17b445dc&quot;,&quot;traceId&quot;:&quot;a679a2c12a1618beb7779a3648264e88&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="273" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595550815" />
+          <option name="id" value="add4cfa0-1f72-490a-895f-3d944753ba79" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiMWQyZDFmOGM5YTkzNDE0MyIsInRyYWNlSWQiOiJkMzc0ZjJmODEyOTY0ZDFiNWFjMTBkYTA1NDg5YmQzZSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;1d2d1f8c9a934143&quot;,&#10;  &quot;traceId&quot;: &quot;d374f2f812964d1b5ac10da05489bd3e&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="11" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:19:10 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="add4cfa0-1f72-490a-895f-3d944753ba79" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;1d2d1f8c9a934143&quot;,&quot;traceId&quot;:&quot;d374f2f812964d1b5ac10da05489bd3e&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="622" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595558466" />
+          <option name="id" value="63f073de-10ba-466a-b3db-74887ac1bb36" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiMGQ2YTQyMDE1NzA5NWVkZiIsInRyYWNlSWQiOiI5YTI2MWFkNjJlOTcyZDlhYjBmY2JlNmY0MTYwNmZlMyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;0d6a420157095edf&quot;,&#10;  &quot;traceId&quot;: &quot;9a261ad62e972d9ab0fcbe6f41606fe3&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:19:18 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="63f073de-10ba-466a-b3db-74887ac1bb36" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;0d6a420157095edf&quot;,&quot;traceId&quot;:&quot;9a261ad62e972d9ab0fcbe6f41606fe3&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="570" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595559168" />
+          <option name="id" value="6263b162-b173-4f4e-8a00-76afe5dfdd8f" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiZTFhZjAyNjM4YmNlOWRiNSIsInRyYWNlSWQiOiJhNzJhYTU0NmIzNDUyNjEzNDc4ZDU2MWRmMWZlMThhYyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;e1af02638bce9db5&quot;,&#10;  &quot;traceId&quot;: &quot;a72aa546b3452613478d561df1fe18ac&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="7" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:19:19 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6263b162-b173-4f4e-8a00-76afe5dfdd8f" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;e1af02638bce9db5&quot;,&quot;traceId&quot;:&quot;a72aa546b3452613478d561df1fe18ac&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="527" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595559751" />
+          <option name="id" value="37503465-7e4e-4f93-9c5a-950d461f5c5c" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiYjVkNzg4NmZkNzgzMDdlMyIsInRyYWNlSWQiOiJmZWYzZjc1ZmUzNGY5NmZhNWEzYjY5NjdkOTYyNGFjMyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;b5d7886fd78307e3&quot;,&#10;  &quot;traceId&quot;: &quot;fef3f75fe34f96fa5a3b6967d9624ac3&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:19:19 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="37503465-7e4e-4f93-9c5a-950d461f5c5c" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;b5d7886fd78307e3&quot;,&quot;traceId&quot;:&quot;fef3f75fe34f96fa5a3b6967d9624ac3&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="524" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733595560447" />
+          <option name="id" value="5a81c2a3-40f4-4709-80c1-7f0b1a112575" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiMGRkZTJiZjQwZjk1YjhmMCIsInRyYWNlSWQiOiIyNzIyYWFlOGMyYWFhOTYyM2VmZWM1NDMxOWQxOTg0NSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;0dde2bf40f95b8f0&quot;,&#10;  &quot;traceId&quot;: &quot;2722aae8c2aaa9623efec54319d19845&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sat, 07 Dec 2024 18:19:20 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="5a81c2a3-40f4-4709-80c1-7f0b1a112575" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;0dde2bf40f95b8f0&quot;,&quot;traceId&quot;:&quot;2722aae8c2aaa9623efec54319d19845&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="486" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1733664047378" />
+          <option name="id" value="6f180d04-81a0-45dc-8612-90a6ba1b736c" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImFjY291bnQgbm90IGZvdW5kIiwic3BhbklkIjoiMGYwMmMzN2ZiN2YyZmM4ZSIsInRyYWNlSWQiOiIyYTVmMGIwZjg5MDVkNjdhNGUzNWQwM2UxNGRjZGYxOSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;account not found&quot;,&#10;  &quot;spanId&quot;: &quot;0f02c37fb7f2fc8e&quot;,&#10;  &quot;traceId&quot;: &quot;2a5f0b0f8905d67a4e35d03e14dcdf19&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="216" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Sun, 08 Dec 2024 13:20:47 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="102" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="6f180d04-81a0-45dc-8612-90a6ba1b736c" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;account not found&quot;,&quot;spanId&quot;:&quot;0f02c37fb7f2fc8e&quot;,&quot;traceId&quot;:&quot;2a5f0b0f8905d67a4e35d03e14dcdf19&quot;}" />
+              <option name="size" value="102" />
+              <option name="time" value="885" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>

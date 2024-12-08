@@ -1,0 +1,32 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+processors:
+  batch:
+  spanmetrics:
+    metrics_expiration: 30m
+
+exporters:
+  otlp/jaeger:
+    endpoint: jaeger:4317
+    tls:
+      insecure: true
+
+  prometheus:
+    endpoint: "0.0.0.0:8889"
+    const_labels:
+      collector: "otel-collector"
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch, spanmetrics]
+      exporters: [otlp/jaeger]
+
+    metrics:
+      receivers: [otlp]
+      exporters: [prometheus]

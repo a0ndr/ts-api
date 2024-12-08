@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="apis">
+            <list>
+              <integrationProperties>
+                <option name="name" value="API" />
+              </integrationProperties>
+            </list>
+          </option>
+          <option name="environmentGroups">
+            <list>
+              <environmentGroupState>
+                <option name="name" value="Default" />
+              </environmentGroupState>
+            </list>
+          </option>
+          <option name="folders">
+            <list>
+              <folderState>
+                <option name="auth">
+                  <authState>
+                    <option name="apiKey">
+                      <apiKeyAuthState>
+                        <option name="key" value="X-Api-Key" />
+                        <option name="value" value="26dabd06-b4c7-11ef-b85e-000c292324f6" />
+                      </apiKeyAuthState>
+                    </option>
+                    <option name="type" value="API_KEY" />
+                  </authState>
+                </option>
+                <option name="id" value="485878c1-855f-4e01-b764-dc5b277660be" />
+                <option name="name" value="Basic" />
+                <option name="requests">
+                  <list>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                          <option name="type" value="JSON" />
+                        </bodyState>
+                      </option>
+                      <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Authorize" />
+                      <option name="sortWeight" value="1000000" />
+                      <option name="url" value="{{URI}}/authorize" />
+                    </requestState>
+                    <requestState>
+                      <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="Accounts" />
+                      <option name="sortWeight" value="2000000" />
+                      <option name="url" value="{{URI}}/accounts" />
+                    </requestState>
+                    <requestState>
+                      <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="Transactions" />
+                      <option name="queryParams">
+                        <list>
+                          <queryParamState>
+                            <option name="key" value="iban" />
+                            <option name="value" value="SK401100000000414513842" />
+                          </queryParamState>
+                        </list>
+                      </option>
+                      <option name="sortWeight" value="3000000" />
+                      <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+                    </requestState>
+                  </list>
+                </option>
+                <option name="sortWeight" value="1000000" />
+              </folderState>
+              <folderState>
+                <option name="id" value="c81254ad-c67e-453b-b6f5-91ce77783912" />
+                <option name="name" value="Company" />
+                <option name="sortWeight" value="2000000" />
+              </folderState>
+            </list>
+          </option>
+          <option name="id" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+          <option name="name" value="TsApi" />
+          <option name="selectedEnvironmentIds">
+            <map>
+              <entry key="default" />
+            </map>
+          </option>
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="autoSync" value="true" />
+              <option name="folderPath" value="C:\Users\fuz\dev\ts-api\.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+          <option name="variables">
+            <variablesState>
+              <option name="json" value="{&#10;  &quot;globals&quot;: {&#10;    &quot;URI&quot;: &quot;http://localhost:8080&quot;,&#10;    &quot;companyId&quot;: &quot;78711328&quot;&#10;  }&#10;}" />
+            </variablesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="dc7bdc4f-f05d-430b-8d8f-dde041f84d70" />
+    <option name="version" value="5" />
+  </component>
+</project>
