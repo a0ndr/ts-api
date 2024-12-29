@@ -1,4 +1,4 @@
-package utils
+package kernel
 
 import (
 	"github.com/google/uuid"
@@ -34,8 +34,8 @@ func RandStringBytesMaskImprSrcUnsafe(n int) string {
 	return *(*string)(unsafe.Pointer(&b))
 }
 
-func UuidV4() (string, error) {
-	u, err := uuid.NewUUID()
+func UuidV7() (string, error) {
+	u, err := uuid.NewV7()
 	if err != nil {
 		return "", err
 	}

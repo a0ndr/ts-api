@@ -1,4 +1,4 @@
-package utils
+package kernel
 
 import (
 	"context"
@@ -6,8 +6,6 @@ import (
 	"github.com/appleboy/gin-jwt/v2"
 	"github.com/joho/godotenv"
 	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/trace"
 	"gorm.io/gorm"
 	"log"
 	"os"
@@ -16,13 +14,12 @@ import (
 )
 
 var (
-	once      sync.Once
-	appConfig *AppConfig
+	once       sync.Once
+	appRuntime *AppRuntime
 )
 
-type AppConfig struct {
-	Host                   string
-	PrometheusExporterHost string
+type AppRuntime struct {
+	Host string
 
 	ServiceName           string
 	ServiceVersion        string
@@ -43,11 +40,7 @@ type AppConfig struct {
 	CodeChallenge         string
 	CodeChallengeVerifier string
 
-	Tracer trace.Tracer
-	Meter  metric.Meter
-
-	RequestCounter metric.Int64Counter
-	ErrorCounter   metric.Int64Counter
+	Diagnostic *AppDiagnostic
 
 	Context context.Context
 
@@ -58,7 +51,7 @@ type AppConfig struct {
 	JWT         *jwt.GinJWTMiddleware
 }
 
-func LoadConfig() *AppConfig {
+func LoadConfig() *AppRuntime {
 	once.Do(func() {
 		appEnv := os.Getenv("API_ENV")
 		if appEnv == "" {
@@ -71,14 +64,13 @@ func LoadConfig() *AppConfig {
 			log.Fatal(err)
 		}
 
-		appConfig = &AppConfig{
-			Host:                   env["HOST"],
-			PrometheusExporterHost: env["PROM_EXPORTER_HOST"],
-			DatabaseDSN:            env["DATABASE_DSN"],
+		appRuntime = &AppRuntime{
+			Host:        env["HOST"],
+			DatabaseDSN: env["DATABASE_DSN"],
 
 			ServiceName:           env["SERVICE_NAME"],
 			ServiceVersion:        env["SERVICE_VERSION"],
-			DeploymentEnvironment: env["DEPLO_ENV"],
+			DeploymentEnvironment: env["DEPLOY_ENV"],
 
 			JaegerEndpoint:     env["JAEGER_ENDPOINT"],
 			PrometheusEndpoint: env["PROMETHEUS_ENDPOINT"],
@@ -92,20 +84,22 @@ func LoadConfig() *AppConfig {
 			CodeChallenge:         env["TB_CODE_CHALLENGE"],
 			CodeChallengeVerifier: env["TB_CODE_CHALLENGE_VERIFIER"],
 
-			Tracer: otel.Tracer(env["SERVICE_NAME"] + "-tracer"),
-			Meter:  otel.Meter(env["SERVICE_NAME"] + "-meter"),
+			Diagnostic: &AppDiagnostic{
+				Tracer: otel.Tracer(env["SERVICE_NAME"] + "-tracer"),
+				Meter:  otel.Meter(env["SERVICE_NAME"] + "-meter"),
+			},
 
 			Realm:       env["SEC_JWT_REALM"],
 			IdentityKey: env["SEC_JWT_IDENTITY_KEY"],
 			SecretKey:   []byte(env["SEC_JWT_SECRET_KEY"]),
 		}
 
-		appConfig.JWT, err = jwt.New(&jwt.GinJWTMiddleware{
-			Realm:       appConfig.Realm,
-			Key:         appConfig.SecretKey,
-			IdentityKey: appConfig.IdentityKey,
+		appRuntime.JWT, err = jwt.New(&jwt.GinJWTMiddleware{
+			Realm:       appRuntime.Realm,
+			Key:         appRuntime.SecretKey,
+			IdentityKey: appRuntime.IdentityKey,
 			Timeout:     time.Hour * 24 * 14, // 2 weeks
 		})
 	})
-	return appConfig
+	return appRuntime
 }

@@ -1,17 +1,15 @@
 package endpoints
 
 import (
-	"context"
 	"encoding/base64"
 	"encoding/json"
-	"errors"
 	"fmt"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"git.sr.ht/~aondrejcak/ts-api/models"
-	u "git.sr.ht/~aondrejcak/ts-api/utils"
 	"github.com/gin-gonic/gin"
 	"go.nhat.io/otelsql/attribute"
-	"gorm.io/gorm"
 	"io"
+	"log"
 	"net/http"
 	"net/url"
 	"strings"
@@ -22,108 +20,104 @@ type CallbackModel struct {
 	State string `json:"state" binding:"required"`
 }
 
-func getAccessToken(c *u.AppConfig, ctx context.Context, code string) (string, string, error) {
-	spanCtx, span := c.Tracer.Start(ctx, "callback.get")
-	defer span.End()
+func getAccessToken(rt *kernel.RequestRuntime, code string) (string, string, error) {
+	art := rt.AppRuntime
 
-	tbUrl := fmt.Sprintf("%s/auth/oauth/v2/token", c.TbUrl)
+	rt.NewChildTracer("callback.exchange").Advance()
+
+	tbUrl := fmt.Sprintf("%s/auth/oauth/v2/token", art.TbUrl)
 
 	client := &http.Client{}
-
-	_, tbSpan := c.Tracer.Start(spanCtx, "callback.get.request")
 
 	bodyParams := url.Values{}
 	bodyParams.Set("code", code)
 	bodyParams.Set("grant_type", "authorization_code")
-	bodyParams.Set("redirect_uri", c.RedirectUri)
+	bodyParams.Set("redirect_uri", art.RedirectUri)
 	bodyParams.Set("scope", "PREMIUM_AIS")
-	bodyParams.Set("code_verifier", c.CodeChallengeVerifier)
+	bodyParams.Set("code_verifier", art.CodeChallengeVerifier)
 
 	r, err := http.NewRequest(http.MethodPost, tbUrl, strings.NewReader(bodyParams.Encode()))
 	if err != nil {
-		return "", "", u.SpanErrf(tbSpan, "failed to create request: %v", err)
+		return "", "", rt.MakeErrorf("failed to create request: %v", err)
 	}
 
-	authHeader := base64.StdEncoding.EncodeToString([]byte(fmt.Sprintf("%s:%s", c.ClientID, c.ClientSecret)))
+	authHeader := base64.StdEncoding.EncodeToString([]byte(fmt.Sprintf("%s:%s", art.ClientID, art.ClientSecret)))
 	r.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 	r.Header.Add("Authorization", "Basic "+authHeader)
 
 	rsp, err := client.Do(r)
 	if err != nil {
-		return "", "", u.SpanErrf(tbSpan, "failed to exec request: %v", err)
+		return "", "", rt.MakeErrorf("failed to exec request: %v", err)
 	}
-	defer rsp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			log.Fatal(err)
+		}
+	}(rsp.Body)
 
 	if rsp.StatusCode != http.StatusOK {
-		return "", "", u.SpanHttpErrf(tbSpan, rsp, "tatra banka api returned a non-OK status code: %s", rsp.Status)
+		return "", "", rt.MakeErrorfFromHttp(rsp, "tatra banka api returned a non-OK status code: %s", rsp.Status)
 	}
 
 	body, err := io.ReadAll(rsp.Body)
 	if err != nil {
-		return "", "", u.SpanErrf(tbSpan, "failed to read response body: %v", err)
+		return "", "", rt.MakeErrorf("failed to read response body: %v", err)
 	}
 
-	tbSpan.SetAttributes(attribute.KeyValue("tb.response", string(body)))
-	tbSpan.End()
-
-	_, parseSpan := c.Tracer.Start(spanCtx, "callback.get.parse")
-	defer parseSpan.End()
+	rt.Span.SetAttributes(attribute.KeyValue("tb.response", string(body)))
 
 	var res map[string]interface{}
 	if err = json.Unmarshal(body, &res); err != nil {
-		return "", "", u.SpanErrf(parseSpan, "failed to unmarshal response body: %v", err)
+		return "", "", rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
+	rt.EndBlock()
 	return res["access_token"].(string), res["refresh_token"].(string), nil
 	// ^ ACCESS TOKEN - 180 DAYS; REFRESH TOKEN - 360 DAYS
 }
 
 func Callback_(c *gin.Context) {
-	config := u.LoadConfig()
-	spanCtx, span := config.Tracer.Start(c.Request.Context(), "callback.handler")
-	defer span.End()
+	rt := c.MustGet("rt").(*kernel.RequestRuntime)
+	rt.NewChildTracer("callback.handler").Advance()
 
 	var req CallbackModel
 	if err := c.ShouldBindJSON(&req); err != nil {
-		u.SpanGinErrf(span, c, 400, "invalid request body")
+		rt.Ef(http.StatusUnprocessableEntity, "invalid request body")
 		return
 	}
 
 	if req.Code == "" || req.State == "" {
-		u.SpanGinErrf(span, c, 400, "code and state are required")
+		rt.Ef(400, "code and state are required")
 		return
 	}
 
-	_, querySpan := config.Tracer.Start(spanCtx, "callback.handler.query")
-	var token models.Token
-	result := config.DatabaseClient.First(&token, "state = ?", req.State)
-	if err := result.Error; err != nil {
-		if errors.Is(result.Error, gorm.ErrRecordNotFound) {
-			u.SpanGinErrf(querySpan, c, 404, "token with state '%s' not found", req.State)
+	var tkn models.Token
+	found, err := rt.First(&tkn, "state = ?", req.State)
+	if !found {
+		if err != nil {
+			rt.Ef(500, "failed to query database: %v", err)
 			return
 		}
-
-		// todo: other error cases
+		rt.Ef(404, "token not found")
+		return
 	}
-	querySpan.End()
 
-	accessToken, refreshToken, err := getAccessToken(config, spanCtx, req.Code)
+	accessToken, refreshToken, err := getAccessToken(rt, req.Code)
 	if err != nil {
-		u.SpanGinErrf(span, c, 500, "failed to get access token: %v", err)
+		rt.Ef(500, "failed to get access token: %v", err)
 		return
 	}
 
-	_, saveSpan := config.Tracer.Start(spanCtx, "callback.handler.save")
-	defer saveSpan.End()
+	tkn.AccessToken = accessToken
+	tkn.RefreshToken = refreshToken
 
-	token.AccessToken = accessToken
-	token.RefreshToken = refreshToken
-
-	result = config.DatabaseClient.Save(&token)
+	result := rt.DB.Save(&tkn)
 	if err = result.Error; err != nil {
-		u.SpanGinErrf(saveSpan, c, 500, "failed to save token: %v", err)
+		rt.Ef(500, "failed to save token: %v", err)
 		return
 	}
 
-	c.Status(http.StatusOK)
+	c.Status(http.StatusNoContent)
+	rt.EndBlock()
 }

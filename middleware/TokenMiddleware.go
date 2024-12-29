@@ -2,42 +2,41 @@ package middleware
 
 import (
 	"errors"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"git.sr.ht/~aondrejcak/ts-api/models"
-	u "git.sr.ht/~aondrejcak/ts-api/utils"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )
 
 func TokenMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		config := u.LoadConfig()
-		ctx, span := config.Tracer.Start(c.Request.Context(), "middleware.token")
-		defer span.End()
+		rt := c.MustGet("rt").(*kernel.RequestRuntime)
+
+		rt.NewChildTracer("middleware.token").Advance()
 
 		authHeader := c.GetHeader("X-Api-Key")
 		if authHeader == "" {
-			u.SpanGinErrf(span, c, 401, "unauthorized: no auth header")
+			rt.Ef(401, "unauthorized: no auth header")
 			return
 		}
 
-		_, querySpan := config.Tracer.Start(ctx, "middleware.token.query")
-		defer querySpan.End()
-
-		hashedToken := u.Sha512(authHeader)
+		hashedToken := kernel.Sha512(authHeader)
 
 		token := models.Token{}
-		res := config.DatabaseClient.WithContext(c.Request.Context()).First(&token, "token_hash = ?", hashedToken)
+		res := rt.DB.WithContext(c.Request.Context()).First(&token, "token_hash = ?", hashedToken)
 		if err := res.Error; err != nil {
 			if errors.Is(err, gorm.ErrRecordNotFound) {
-				u.SpanGinErrf(querySpan, c, 401, "unauthorized: invalid token")
+				rt.Ef(401, "unauthorized: invalid token")
 				return
 			}
 
-			u.SpanGinErrf(querySpan, c, 500, "failed to authorize user: could not query database: %s", err)
+			rt.Ef(500, "failed to authorize user: could not query database: %s", err)
 			return
 		}
 
-		c.Set("token", token)
+		rt.Token = &token
+
+		rt.EndBlock()
 		c.Next()
 	}
 }

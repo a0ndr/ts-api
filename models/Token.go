@@ -9,7 +9,7 @@ type Token struct {
 	gorm.Model
 	ExpiresAt time.Time
 	TokenHash string
-	CompanyId string
+	CompanyID string
 
 	State      string
 	GrantToken string
@@ -17,4 +17,6 @@ type Token struct {
 
 	AccessToken  string
 	RefreshToken string
+
+	Payments []Payment
 }

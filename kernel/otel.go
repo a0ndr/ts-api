@@ -1,9 +1,7 @@
-package utils
+package kernel
 
 import (
 	"fmt"
-	"github.com/rs/zerolog"
-	"github.com/rs/zerolog/log"
 	"go.opentelemetry.io/contrib/instrumentation/runtime"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
@@ -14,24 +12,22 @@ import (
 	"go.opentelemetry.io/otel/sdk/resource"
 	"go.opentelemetry.io/otel/sdk/trace"
 	"go.opentelemetry.io/otel/semconv/v1.26.0"
-	"os"
-	"time"
 )
 
-func SetupOtel(c *AppConfig) (func(), error) {
+func (art *AppRuntime) SetupOtel() (func(), error) {
 	res, err := resource.Merge(resource.Default(),
 		resource.NewWithAttributes(
 			semconv.SchemaURL,
-			semconv.ServiceName(c.ServiceName),
-			semconv.ServiceVersion(c.ServiceVersion),
-			semconv.DeploymentEnvironment(c.DeploymentEnvironment),
+			semconv.ServiceName(art.ServiceName),
+			semconv.ServiceVersion(art.ServiceVersion),
+			semconv.DeploymentEnvironment(art.DeploymentEnvironment),
 		))
 	if err != nil {
 		return nil, err
 	}
 
-	traceExporter, err := otlptracehttp.New(c.Context,
-		otlptracehttp.WithEndpoint(c.JaegerEndpoint),
+	traceExporter, err := otlptracehttp.New(art.Context,
+		otlptracehttp.WithEndpoint(art.JaegerEndpoint),
 		otlptracehttp.WithInsecure(), // TODO: Remove for production, use TLS
 	)
 	if err != nil {
@@ -76,25 +72,16 @@ func SetupOtel(c *AppConfig) (func(), error) {
 	}
 
 	// Request counter metric
-	counter, err := c.Meter.Int64Counter("http_requests_total",
+	counter, err := art.Diagnostic.Meter.Int64Counter("http_requests_total",
 		metric.WithDescription("Total number of HTTP requests"))
 	if err != nil {
 		return nil, fmt.Errorf("creating request counter: %w", err)
 	}
-	c.RequestCounter = counter
-
-	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
-	log.Logger = log.Output(zerolog.ConsoleWriter{
-		Out:        os.Stdout,
-		TimeFormat: time.RFC3339,
-	}).With().Caller().Logger()
-
-	// Set global logger
-	zerolog.SetGlobalLevel(zerolog.InfoLevel)
+	art.Diagnostic.RequestCounter = counter
 
 	// Cleanup function
 	return func() {
-		_ = tracerProvider.Shutdown(c.Context)
-		_ = metricProvider.Shutdown(c.Context)
+		_ = tracerProvider.Shutdown(art.Context)
+		_ = metricProvider.Shutdown(art.Context)
 	}, nil
 }

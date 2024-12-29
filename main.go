@@ -3,48 +3,45 @@ package main
 import (
 	"context"
 	"errors"
+	"git.sr.ht/~aondrejcak/ts-api/endpoints/payments"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rs/zerolog/log"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 
 	"git.sr.ht/~aondrejcak/ts-api/endpoints"
 	"git.sr.ht/~aondrejcak/ts-api/middleware"
-	"git.sr.ht/~aondrejcak/ts-api/utils"
 )
 
 func main() {
-	config := utils.LoadConfig()
-	config.Context = context.Background()
+	art := kernel.LoadConfig()
+	art.Context = context.Background()
 
-	cleanupFunc, err := utils.SetupOtel(config)
+	cleanupFunc, err := art.SetupOtel()
 	if err != nil {
-		log.Fatal().Err(err).Msg("error setting up otel")
+		log.Fatal(err)
 	}
 	defer cleanupFunc()
 
-	_, span := config.Tracer.Start(config.Context, "main")
+	span, _ := art.Diagnostic.BeginTracing(art.Context, "main")
 	defer span.End()
 
-	err = utils.PrepareDatabase(config)
+	err = art.PrepareDatabase()
 	if err != nil {
 		span.RecordError(err)
-		log.Fatal().
-			Str("trace_id", span.SpanContext().TraceID().String()).
-			Str("span_id", span.SpanContext().SpanID().String()).
-			Err(err).Msg("failed to prepare database")
 	}
 
 	r := gin.Default() // TODO: route & recovery middleware (prod)
 	err = r.SetTrustedProxies([]string{})
 	if err != nil {
 		span.RecordError(err)
-		log.Fatal().Err(err).Msg("failed to set trusted proxies: %s")
+		log.Fatal(err)
 	}
 
-	r.Use(otelgin.Middleware(config.ServiceName))
+	r.Use(otelgin.Middleware(art.ServiceName))
 	r.Use(middleware.TracerMiddleware())
 
 	r.NoRoute(func(c *gin.Context) {
@@ -74,6 +71,8 @@ func main() {
 	{
 		authorized.GET("/accounts", endpoints.Accounts)
 		authorized.GET("/transactions", endpoints.Transactions)
+
+		payments.RegisterController(authorized)
 	}
 
 	r.GET("/health", func(c *gin.Context) {
@@ -81,11 +80,9 @@ func main() {
 	})
 	r.GET("/metrics", gin.WrapH(promhttp.Handler()))
 
-	endpoints.RegisterControllers(r)
-
-	err = r.Run(config.Host)
+	err = r.Run(art.Host)
 	if err != nil {
 		span.RecordError(err)
-		log.Fatal().Err(err).Msg("failed to start app: %s")
+		log.Fatal(err)
 	}
 }

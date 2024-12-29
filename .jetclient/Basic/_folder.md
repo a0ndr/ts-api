@@ -5,6 +5,6 @@ id = '485878c1-855f-4e01-b764-dc5b277660be'
 
 [auth.apiKey]
 key = 'X-Api-Key'
-value = '26dabd06-b4c7-11ef-b85e-000c292324f6'
+value = '01940a07-e910-777d-9c83-38b87cc7fea7'
 inHeader = true
 ```

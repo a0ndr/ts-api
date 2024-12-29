@@ -2,11 +2,10 @@ package endpoints
 
 import (
 	"bytes"
-	"context"
 	"encoding/json"
-	"errors"
 	"fmt"
-	"go.nhat.io/otelsql/attribute"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
+	val "github.com/go-ozzo/ozzo-validation"
 	"io"
 	"log"
 	"net/http"
@@ -15,213 +14,222 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
+	"go.nhat.io/otelsql/attribute"
 
 	"git.sr.ht/~aondrejcak/ts-api/models"
-	u "git.sr.ht/~aondrejcak/ts-api/utils"
 )
 
-type AuthorizeModel struct {
-	CompanyId string `json:"companyId" binding:"required"`
+type AuthorizeDto struct {
+	CompanyId string
 }
 
-func getClientCredentialsGrantToken(c *u.AppConfig, ctx context.Context) (string, error) {
-	spanCtx, span := c.Tracer.Start(ctx, "authorize.grant_token")
-	defer span.End()
+func (dto AuthorizeDto) Validate() error {
+	return val.ValidateStruct(&dto,
+		val.Field(&dto.CompanyId, val.Required),
+	)
+}
 
-	_, tbSpan := c.Tracer.Start(spanCtx, "authorize.grant_token.get")
+func getClientCredentialsGrantToken(rt *kernel.RequestRuntime) (string, error) {
+	art := rt.AppRuntime
+	rt.NewChildTracer("authorize.grant_token").Advance()
 
 	data := url.Values{}
-	data.Set("client_id", c.ClientID)
-	data.Set("client_secret", c.ClientSecret)
+	data.Set("client_id", art.ClientID)
+	data.Set("client_secret", art.ClientSecret)
 	data.Set("grant_type", "client_credentials")
 	data.Set("scope", "PREMIUM_AIS")
 
-	tbUrl := fmt.Sprintf("%s/auth/oauth/v2/token", c.TbUrl)
+	tbUrl := fmt.Sprintf("%s/auth/oauth/v2/token", art.TbUrl)
 	client := &http.Client{}
 	r, err := http.NewRequest(http.MethodPost, tbUrl, strings.NewReader(data.Encode()))
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to create request: %v", err)
+		return "", rt.MakeErrorf("failed to make request: %v", err)
 	}
 	r.Header.Add("Content-Type", "application/x-www-form-urlencoded")
 
 	resp, err := client.Do(r)
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to make request: %v", err)
+		return "", rt.MakeErrorf("failed to make request: %v", err)
 	}
-	defer resp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			log.Printf("failed to close body: %v", err)
+		}
+	}(resp.Body)
 
 	if resp.StatusCode != http.StatusOK {
-		return "", u.SpanHttpErrf(tbSpan, resp, "tatra banka returned a non-Ok status code: %d", resp.Status)
+		return "", rt.MakeErrorfFromHttp(resp, "tatra banka returned a non-Ok status code: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to read response body: %v", err)
+		return "", rt.MakeErrorf("failed to read response body: %v", err)
 	}
 
-	tbSpan.SetAttributes(attribute.KeyValue("tb.response", string(body)))
-	tbSpan.End()
-
-	_, parseSpan := c.Tracer.Start(spanCtx, "authorize.grant_token.parse")
-	defer parseSpan.End()
+	rt.Span.SetAttributes(attribute.KeyValue("tb.response", string(body)))
 
 	var res map[string]interface{}
 	if err = json.Unmarshal(body, &res); err != nil {
-		return "", u.SpanErrf(parseSpan, "failed to unmarshal response body: %v", err)
+		return "", rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
+	rt.EndBlock()
 	return res["access_token"].(string), nil
 }
 
-func getConsentId(c *u.AppConfig, ctx context.Context, grantToken string) (string, error) {
-	spanCtx, span := c.Tracer.Start(ctx, "authorize.consent_id")
-	defer span.End()
+func getConsentId(rt *kernel.RequestRuntime, grantToken string) (string, error) {
+	art := rt.AppRuntime
 
-	tbUrl := fmt.Sprintf("%s/v3/consents", c.TbUrl)
+	rt.NewChildTracer("authorize.consent_id").Advance()
 
-	_, tbSpan := c.Tracer.Start(spanCtx, "authorize.consent_id.get")
+	tbUrl := fmt.Sprintf("%s/v3/consents", art.TbUrl)
 
 	j, err := json.Marshal(&gin.H{
 		"combinedServiceIndicator": true,
 	})
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to marshal request: %v", err)
+		return "", rt.MakeErrorf("failed to marshal request: %v", err)
 	}
 
 	r, err := http.NewRequest(http.MethodPost, tbUrl, bytes.NewBuffer(j))
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to create request: %v", err)
+		return "", rt.MakeErrorf("failed to create request: %v", err)
 	}
 
-	requestId, err := u.UuidV4()
+	requestId, err := kernel.UuidV7()
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to generate request id: %v", err)
+		return "", rt.MakeErrorf("failed to generate request id: %v", err)
 	}
 
 	r.Header.Add("Content-Type", "application/json")
 	r.Header.Add("Authorization", fmt.Sprintf("Bearer %s", grantToken))
 	r.Header.Add("X-Request-ID", requestId)
-	tbSpan.SetAttributes(attribute.KeyValue("tb.request_id", requestId))
+	rt.Span.SetAttributes(attribute.KeyValue("tb.request_id", requestId))
 
 	client := &http.Client{}
 	resp, err := client.Do(r)
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to make request: %v", err)
+		return "", rt.MakeErrorf("failed to make request: %v", err)
 	}
-	defer resp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			log.Printf("failed to close body: %v", err)
+		}
+	}(resp.Body)
 
 	if resp.StatusCode != http.StatusCreated {
-		return "", u.SpanHttpErrf(tbSpan, resp, "tatra banka returned a non-Ok status code: %d", resp.Status)
+		return "", rt.MakeErrorfFromHttp(resp, "tatra banka returned a non-Ok status code: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return "", u.SpanErrf(tbSpan, "failed to read response body: %v", err)
+		return "", rt.MakeErrorf("failed to read response body: %v", err)
 	}
 
-	tbSpan.SetAttributes(attribute.KeyValue("tb.response", string(body)))
-	tbSpan.End()
-
-	_, parseSpan := c.Tracer.Start(spanCtx, "authorize.consent_id.parse")
-	defer parseSpan.End()
+	rt.Span.SetAttributes(attribute.KeyValue("tb.response", string(body)))
 
 	var res map[string]interface{}
 	if err = json.Unmarshal(body, &res); err != nil {
-		return "", u.SpanErrf(parseSpan, "failed to unmarshal response body: %v", err)
+		return "", rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
+	rt.EndBlock()
 	return res["consentId"].(string), nil
 }
 
-func createAuthUrl(c *u.AppConfig, ctx context.Context, consentId string, state string) (string, error) {
-	_, span := c.Tracer.Start(ctx, "authorize.create_auth_url")
-	defer span.End()
+func createAuthUrl(rt *kernel.RequestRuntime, consentId string, state string) (string, error) {
+	art := rt.AppRuntime
 
-	parsedUrl, err := url.Parse(fmt.Sprintf("%s/auth/oauth/v2/authorize", c.TbUrl))
+	rt.NewChildTracer("authorize.create_auth_url").Advance()
+
+	parsedUrl, err := url.Parse(fmt.Sprintf("%s/auth/oauth/v2/authorize", art.TbUrl))
 	if err != nil {
-		return "", u.SpanErr(span, err)
+		return "", rt.MakeError(err)
 	}
 
 	q := parsedUrl.Query()
-	q.Set("client_id", c.ClientID)
+	q.Set("client_id", art.ClientID)
 	q.Set("response_type", "code")
 	q.Set("scope", "PREMIUM_AIS:"+consentId)
-	q.Set("redirect_uri", c.RedirectUri)
+	q.Set("redirect_uri", art.RedirectUri)
 	q.Set("state", state)
-	q.Set("code_challenge", c.CodeChallenge)
+	q.Set("code_challenge", art.CodeChallenge)
 	q.Set("code_challenge_method", "S256")
 
 	parsedUrl.RawQuery = q.Encode()
 	finalUrl := parsedUrl.String()
 
-	span.SetAttributes(attribute.KeyValue("tb.auth_url", finalUrl))
+	rt.Span.SetAttributes(attribute.KeyValue("tb.auth_url", finalUrl))
+	rt.EndBlock()
+
 	return finalUrl, nil
 }
 
 func Authorize(c *gin.Context) {
-	config := u.LoadConfig()
+	rt := c.MustGet("rt").(*kernel.RequestRuntime)
+	rt.NewChildTracer("authorize.handler").Advance()
 
-	ctx, span := config.Tracer.Start(c.Request.Context(), "authorize.handler")
-	defer span.End()
-
-	var req AuthorizeModel
-	if err := c.ShouldBindJSON(&req); err != nil {
-		log.Println(c.ShouldBindJSON(&req) != nil)
-		u.SpanGinErrf(span, c, 500, "invalid request body")
+	var dto AuthorizeDto
+	rt.BindJSON(&dto)
+	if rt.Error != nil {
+		rt.Ef(500, "could not bind body: %v", rt.Error)
 		return
 	}
 
-	_, companySpan := config.Tracer.Start(ctx, "authorize.company")
+	if err := dto.Validate(); err != nil {
+		rt.E(http.StatusBadRequest, err)
+		return
+	}
+
 	var company models.Company
-	result := config.DatabaseClient.First(&company, req.CompanyId)
-	if err := result.Error; err != nil {
-		if errors.Is(result.Error, gorm.ErrRecordNotFound) {
-			u.SpanGinErrf(companySpan, c, 500, "company with ID '%s' not found", req.CompanyId)
+	found, err := rt.First(&company, "id = ?", dto.CompanyId)
+	if !found {
+		if err != nil {
+			rt.Ef(500, "could not find company: %v", err)
 			return
 		}
+		rt.Ef(404, "company with ID '%v' does not exist", dto.CompanyId)
+		return
 	}
-	companySpan.End()
 
 	// 1. client credentials grant
-	grantToken, err := getClientCredentialsGrantToken(config, ctx)
+	grantToken, err := getClientCredentialsGrantToken(rt)
 	if err != nil {
-		u.SpanGinErrf(span, c, 500, "failed to get client credentials grant token: %v", err)
+		rt.Ef(500, "failed to get client credentials grant token: %v", err)
 		return
 	}
 
 	// 2. create consentId
-	consentId, err := getConsentId(config, ctx, grantToken)
+	consentId, err := getConsentId(rt, grantToken)
 	if err != nil {
-		u.SpanGinErrf(span, c, 500, "failed to get consent id: %v", err)
+		rt.Ef(500, "failed to get consent id: %v", err)
 		return
 	}
 
 	// 3. (1.) redirect to portal
-	state := u.RandStringBytesMaskImprSrcUnsafe(16)
-	authUrl, err := createAuthUrl(config, ctx, consentId, state)
+	state := kernel.RandStringBytesMaskImprSrcUnsafe(16)
+	authUrl, err := createAuthUrl(rt, consentId, state)
 	if err != nil {
-		u.SpanGinErrf(span, c, 500, "failed to create auth url: %v", err)
+		rt.Ef(500, "failed to create auth url: %v", err)
 		return
 	}
 
-	_, saveSpan := config.Tracer.Start(ctx, "authorize.create_token")
-	defer saveSpan.End()
-
-	token, err := u.UuidV4()
+	token, err := kernel.UuidV7()
 	if err != nil {
-		u.SpanGinErrf(saveSpan, c, 500, "failed to generate token: %v", err)
+		rt.Ef(500, "failed to generate token: %v", err)
 		return
 	}
 
-	hash := u.Sha512(token)
+	hash := kernel.Sha512(token)
 
 	t := time.Now()
 	t = t.Add(time.Minute * 15)
 
 	entity := models.Token{
 		TokenHash:  hash,
-		CompanyId:  req.CompanyId,
+		CompanyID:  dto.CompanyId,
 		GrantToken: grantToken,
 		ConsentId:  consentId,
 		State:      state,
@@ -230,15 +238,16 @@ func Authorize(c *gin.Context) {
 	// ^ TODO: add IP & User Agent verification
 	//                  ~~~~~~~~~~ is needed?
 
-	result = config.DatabaseClient.Create(&entity)
+	result := rt.DB.Create(&entity)
 	if result.Error != nil {
-		u.SpanGinErrf(saveSpan, c, 500, "failed to save to database: %v", result.Error)
+		rt.Ef(500, "failed to save to database: %v", result.Error.Error())
 		return
 	}
 
-	c.JSON(http.StatusOK, &gin.H{
+	c.JSON(201, &gin.H{
 		"token":     token,
 		"url":       authUrl,
 		"expiresAt": t.Format(time.RFC3339),
 	})
+	rt.EndBlock()
 }

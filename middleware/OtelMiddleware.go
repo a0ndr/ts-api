@@ -3,7 +3,7 @@ package middleware
 import (
 	"bytes"
 	"context"
-	"git.sr.ht/~aondrejcak/ts-api/utils"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"github.com/gin-gonic/gin"
 	"go.nhat.io/otelsql/attribute"
 	"go.opentelemetry.io/otel/metric"
@@ -20,30 +20,32 @@ type responseWriter struct {
 
 func TracerMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		config := utils.LoadConfig()
-		ctx, span := config.Tracer.Start(c.Request.Context(), "middleware.tracer")
-		defer span.End()
+		art := kernel.LoadConfig()
+		rt := kernel.InitRequest(art, c)
 
-		span.SetAttributes(
+		rt.Span.SetAttributes(
 			attribute.KeyValue("http.method", c.Request.Method),
 			attribute.KeyValue("http.url", c.Request.URL.String()),
 			attribute.KeyValue("http.host", c.Request.Host),
 		)
 
 		bodyBytes, _ := c.GetRawData()
-		span.SetAttributes(attribute.KeyValue("http.request_body", string(bodyBytes)))
+		rt.Span.SetAttributes(attribute.KeyValue("http.request_body", string(bodyBytes)))
 		c.Request.Body = io.NopCloser(bytes.NewReader(bodyBytes))
 
-		config.RequestCounter.Add(ctx, 1,
+		art.Diagnostic.RequestCounter.Add(rt.SpanContext, 1,
 			metric.WithAttributes(attribute.KeyValue("http.method", c.Request.Method)),
 		)
 
 		c.Writer = &responseWriter{
 			ResponseWriter: c.Writer,
-			ctx:            ctx,
-			span:           span,
+			ctx:            rt.SpanContext,
+			span:           rt.Span,
 		}
 
+		c.Set("rt", rt)
+
+		rt.End()
 		c.Next()
 	}
 }

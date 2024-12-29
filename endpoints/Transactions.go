@@ -1,11 +1,10 @@
 package endpoints
 
 import (
-	"context"
 	"encoding/json"
 	"fmt"
-	"git.sr.ht/~aondrejcak/ts-api/models"
-	u "git.sr.ht/~aondrejcak/ts-api/utils"
+	"git.sr.ht/~aondrejcak/ts-api/assert"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"github.com/gin-gonic/gin"
 	"go.nhat.io/otelsql/attribute"
 	"io"
@@ -83,12 +82,12 @@ type transactions struct {
 	//} `json:"_links"`
 }
 
-func listTransactions(c *u.AppConfig, ctx context.Context, token *models.Token, t *TransactionsModel) (*transactions, error) {
-	ctx, span := c.Tracer.Start(ctx, "transactions.list")
-	defer span.End()
+func listTransactions(rt *kernel.RequestRuntime, t *TransactionsModel) (*transactions, error) {
+	art := rt.AppRuntime
 
-	_, urlSpan := c.Tracer.Start(ctx, "transactions.list.make_url")
-	parsedUrl, _ := url.Parse(fmt.Sprintf("%s/v5/accounts/%s/transactions", c.TbUrl, t.AccountId))
+	rt.NewChildTracer("transactions.list").Advance()
+
+	parsedUrl, _ := url.Parse(fmt.Sprintf("%s/v5/accounts/%s/transactions", art.TbUrl, t.AccountId))
 	q := parsedUrl.Query()
 	if t.DateFrom != "" {
 		q.Set("dateFrom", t.DateFrom)
@@ -129,88 +128,73 @@ func listTransactions(c *u.AppConfig, ctx context.Context, token *models.Token, 
 
 	parsedUrl.RawQuery = q.Encode()
 	tbUrl := parsedUrl.String()
-	urlSpan.End()
-
-	_, tbSpan := c.Tracer.Start(ctx, "transactions.list.query")
-	defer tbSpan.End()
 
 	client := &http.Client{}
 	r, err := http.NewRequest(http.MethodGet, tbUrl, nil)
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to create request: %v", err)
+		return nil, rt.MakeErrorf("failed to create request: %v", err)
 	}
 
-	requestId, err := u.UuidV4()
+	requestId, err := kernel.UuidV7()
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to generate request id: %v", err)
+		return nil, rt.MakeErrorf("failed to generate request id: %v", err)
 	}
-	tbSpan.SetAttributes(attribute.KeyValue("tb.request_id", requestId))
+	rt.Span.SetAttributes(attribute.KeyValue("tb.request_id", requestId))
 
 	r.Header.Add("X-Request-ID", requestId)
-	r.Header.Add("Authorization", "Bearer "+token.AccessToken)
+	r.Header.Add("Authorization", "Bearer "+rt.Token.AccessToken)
 
 	rsp, err := client.Do(r)
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to exec request: %v", err)
+		return nil, rt.MakeErrorf("failed to exec request: %v", err)
 	}
 	if rsp.StatusCode != http.StatusOK {
 		if rsp.StatusCode == http.StatusNotFound || rsp.StatusCode == http.StatusForbidden {
-			return nil, u.SpanErrf(tbSpan, "account not found")
+			return nil, rt.MakeErrorf("account not found")
 		}
-		return nil, u.SpanHttpErrf(tbSpan, rsp, "tatra banka api returned a non-OK status code: %d", rsp.StatusCode)
+		return nil, rt.MakeErrorfFromHttp(rsp, "tatra banka api returned a non-OK status code: %d", rsp.StatusCode)
 	}
 
 	body, err := io.ReadAll(rsp.Body)
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to read response body: %v", err)
+		return nil, rt.MakeErrorf("failed to read response body: %v", err)
 	}
 
-	tbSpan.SetAttributes(attribute.KeyValue("tb.response", string(body)))
-	tbSpan.End()
-
-	_, parseSpan := c.Tracer.Start(ctx, "transactions.list.parse")
-	defer parseSpan.End()
+	rt.Span.SetAttributes(attribute.KeyValue("tb.response", string(body)))
 
 	transactionLists := &transactions{}
 	if err = json.Unmarshal(body, transactionLists); err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to unmarshal response body: %v", err)
+		return nil, rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
-	parseSpan.SetAttributes(attribute.KeyValue("api.accounts", fmt.Sprintf("%+v", transactionLists.Transactions)))
+	rt.Span.SetAttributes(attribute.KeyValue("api.accounts", fmt.Sprintf("%+v", transactionLists.Transactions)))
+	rt.EndBlock()
 
 	return transactionLists, nil
 }
 
 func Transactions(c *gin.Context) {
-	config := u.LoadConfig()
-	ctx, span := config.Tracer.Start(c.Request.Context(), "transactions.handler")
-	defer span.End()
+	rt := c.MustGet("rt").(*kernel.RequestRuntime)
+	rt.NewChildTracer("transactions.handler").Advance()
 
-	tok, ok := c.Get("token")
-	if !ok {
-		u.SpanGinErrf(span, c, 401, "unauthorized: could not get context token")
-		return
-	}
+	assert.NotNil(rt.Token, "token != nil")
 
 	var model TransactionsModel
 	if err := c.BindQuery(&model); err != nil {
-		u.SpanGinErrf(span, c, 500, "failed to bind query body: %v", err)
+		rt.Ef(500, "failed to bind query body: %v", err)
 		return
 	}
 	if model.Iban == "" && model.AccountId == "" {
-		u.SpanGinErrf(span, c, 400, "account id or iban is required")
+		rt.Ef(400, "account id or iban is required")
 		return
 	} else if model.Iban != "" && model.AccountId != "" {
-		u.SpanGinErrf(span, c, 400, "only account id or iban can be provided")
+		rt.Ef(400, "only account id or iban can be provided")
 		return
 	}
 
-	token := tok.(models.Token)
-
 	if model.AccountId == "" {
-		_, accSpan := config.Tracer.Start(ctx, "transactions.accounts")
-		accountList, err := listAccounts(config, ctx, &token)
+		accountList, err := listAccounts(rt)
 		if err != nil {
-			u.SpanGinErrf(span, c, 500, "failed to list accounts: %v", err)
+			rt.Ef(500, "failed to list accounts: %v", err)
 			return
 		}
 
@@ -220,19 +204,19 @@ func Transactions(c *gin.Context) {
 				break
 			}
 		}
-		accSpan.End()
 	}
 
-	transactionList, err := listTransactions(config, ctx, &token, &model)
+	transactionList, err := listTransactions(rt, &model)
 	if err != nil {
 		if err.Error() == "account not found" {
-			u.SpanGinErrf(span, c, 404, err.Error())
+			rt.Ef(404, err.Error())
 			return
 		}
 
-		u.SpanGinErrf(span, c, 500, "failed to list transactions: %v", err)
+		rt.Ef(500, "failed to list transactions: %v", err)
 		return
 	}
 
-	c.JSON(http.StatusOK, transactionList)
+	c.JSON(200, transactionList)
+	rt.EndBlock()
 }

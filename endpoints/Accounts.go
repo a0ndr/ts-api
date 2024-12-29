@@ -1,11 +1,10 @@
 package endpoints
 
 import (
-	"context"
 	"encoding/json"
 	"fmt"
-	"git.sr.ht/~aondrejcak/ts-api/models"
-	u "git.sr.ht/~aondrejcak/ts-api/utils"
+	"git.sr.ht/~aondrejcak/ts-api/assert"
+	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"github.com/gin-gonic/gin"
 	"go.nhat.io/otelsql/attribute"
 	"io"
@@ -47,33 +46,31 @@ type accounts struct {
 	} `json:"accounts"`
 }
 
-func listAccounts(c *u.AppConfig, ctx context.Context, token *models.Token) (*accounts, error) {
-	spanCtx, span := c.Tracer.Start(ctx, "accounts.list")
-	defer span.End()
+func listAccounts(rt *kernel.RequestRuntime) (*accounts, error) {
+	art := rt.AppRuntime
 
-	tbUrl := fmt.Sprintf("%s/v3/accounts?withBalance=true", c.TbUrl)
+	rt.NewChildTracer("accounts.list").Advance()
+
+	tbUrl := fmt.Sprintf("%s/v3/accounts?withBalance=true", art.TbUrl)
 
 	client := &http.Client{}
-
-	_, tbSpan := c.Tracer.Start(spanCtx, "accounts.list.query")
-
 	r, err := http.NewRequest(http.MethodGet, tbUrl, nil)
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to create request: %v", err)
+		return nil, rt.MakeErrorf("failed to create request: %v", err)
 	}
 
-	requestId, err := u.UuidV4()
+	requestId, err := kernel.UuidV7()
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to generate request id: %v", err)
+		return nil, rt.MakeErrorf("failed to generate request id: %v", err)
 	}
-	tbSpan.SetAttributes(attribute.KeyValue("tb.request_id", requestId))
+	rt.Span.SetAttributes(attribute.KeyValue("tb.request_id", requestId))
 
 	r.Header.Add("X-Request-ID", requestId)
-	r.Header.Add("Authorization", "Bearer "+token.AccessToken)
+	r.Header.Add("Authorization", "Bearer "+rt.Token.AccessToken)
 
 	rsp, err := client.Do(r)
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to exec request: %v", err)
+		return nil, rt.MakeErrorf("failed to exec request: %v", err)
 	}
 	defer func(Body io.ReadCloser) {
 		err := Body.Close()
@@ -83,53 +80,44 @@ func listAccounts(c *u.AppConfig, ctx context.Context, token *models.Token) (*ac
 	}(rsp.Body)
 
 	if rsp.StatusCode != http.StatusOK {
-		return nil, u.SpanHttpErrf(tbSpan, rsp, "tatra banka api returned a non-OK status code: %d", rsp.StatusCode)
+		return nil, rt.MakeErrorfFromHttp(rsp, "tatra banka api returned a non-OK status code: %d", rsp.StatusCode)
 	}
 
 	body, err := io.ReadAll(rsp.Body)
 	if err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to read response body: %v", err)
+		return nil, rt.MakeErrorf("failed to read response body: %v", err)
 	}
 
-	tbSpan.SetAttributes(attribute.KeyValue("tb.response", string(body)))
-	tbSpan.End()
-
-	_, parseSpan := c.Tracer.Start(spanCtx, "accounts.list.parse")
-	defer parseSpan.End()
+	rt.Span.SetAttributes(attribute.KeyValue("tb.response", string(body)))
 
 	accountLists := &accounts{}
 	if err = json.Unmarshal(body, accountLists); err != nil {
-		return nil, u.SpanErrf(tbSpan, "failed to unmarshal response body: %v", err)
+		return nil, rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
-	parseSpan.SetAttributes(attribute.KeyValue("api.accounts", fmt.Sprintf("%+v", accountLists.Accounts)))
+	rt.Span.SetAttributes(attribute.KeyValue("api.accounts", fmt.Sprintf("%+v", accountLists.Accounts)))
+	rt.EndBlock()
+
 	return accountLists, nil
 }
 
 func Accounts(c *gin.Context) {
-	config := u.LoadConfig()
-	ctx, span := config.Tracer.Start(c.Request.Context(), "accounts.handler")
-	defer span.End()
+	rt := c.MustGet("rt").(*kernel.RequestRuntime)
+	rt.NewChildTracer("accounts.handler").Advance()
 
-	tok, ok := c.Get("token")
-	if !ok {
-		span.RecordError(fmt.Errorf("failed to get token"))
-		c.JSON(http.StatusUnauthorized, &gin.Error{
-			Err: fmt.Errorf("unauthorized: could not get context token"),
-		})
-		return
-	}
+	assert.NotNil(rt.Token, "token != nil")
 
-	token := tok.(models.Token)
-
-	accountList, err := listAccounts(config, ctx, &token)
+	accountList, err := listAccounts(rt)
 	if err != nil {
-		span.RecordError(err)
-		c.JSON(http.StatusInternalServerError, &gin.Error{
-			Err: fmt.Errorf("could not list accounts: %w", err),
-		})
+		if err.Error() == "tatra banka api returned a non-OK status code: 401" {
+			rt.Ef(http.StatusForbidden, "failed to list accounts: invalid token")
+			return
+		}
+
+		rt.Ef(http.StatusInternalServerError, "could not list accounts: %v", err)
 		return
 	}
 
-	c.JSON(http.StatusOK, accountList)
+	c.JSON(200, accountList)
+	rt.EndBlock()
 }
