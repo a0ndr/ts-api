@@ -61,7 +61,7 @@ func InitPayment(rt *kernel.RequestRuntime, dto *InitPaymentDto) (*PaymentInfo, 
 	art := rt.AppRuntime
 	tok := rt.Token
 
-	rt.NewChildTracer("payment_init.real").Advance()
+	rt.StepInto("payment_init.real")
 
 	jData := gin.H{
 		"instructedAmount": &gin.H{
@@ -157,13 +157,13 @@ func InitPayment(rt *kernel.RequestRuntime, dto *InitPaymentDto) (*PaymentInfo, 
 		return nil, rt.MakeErrorf("could not unmarshal data: %v", err)
 	}
 
-	rt.EndBlock()
+	rt.StepBack()
 	return &res, nil
 }
 
 func InitializePayment(c *gin.Context) {
 	rt := c.MustGet("rt").(*kernel.RequestRuntime)
-	rt.NewChildTracer("payment_init.handler").Advance()
+	rt.StepInto("payment_init.handler")
 
 	assert.NotNil(rt.Token, "token != nil")
 
@@ -232,5 +232,5 @@ func InitializePayment(c *gin.Context) {
 		"url":               pi.Links.ScaRedirect.Href,
 		"transactionStatus": pi.TransactionStatus,
 	})
-	rt.EndBlock()
+	rt.StepBack()
 }

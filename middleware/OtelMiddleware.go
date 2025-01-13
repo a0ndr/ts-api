@@ -46,6 +46,7 @@ func TracerMiddleware() gin.HandlerFunc {
 		c.Set("rt", rt)
 
 		rt.End()
+		rt.SetIndex(0)
 		c.Next()
 	}
 }

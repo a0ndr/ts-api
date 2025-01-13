@@ -23,7 +23,7 @@ type CallbackModel struct {
 func getAccessToken(rt *kernel.RequestRuntime, code string) (string, string, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("callback.exchange").Advance()
+	rt.StepInto("callback.exchange")
 
 	tbUrl := fmt.Sprintf("%s/auth/oauth/v2/token", art.TbUrl)
 
@@ -72,14 +72,14 @@ func getAccessToken(rt *kernel.RequestRuntime, code string) (string, string, err
 		return "", "", rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
-	rt.EndBlock()
+	rt.StepBack()
 	return res["access_token"].(string), res["refresh_token"].(string), nil
 	// ^ ACCESS TOKEN - 180 DAYS; REFRESH TOKEN - 360 DAYS
 }
 
 func Callback_(c *gin.Context) {
 	rt := c.MustGet("rt").(*kernel.RequestRuntime)
-	rt.NewChildTracer("callback.handler").Advance()
+	rt.StepInto("callback.handler")
 
 	var req CallbackModel
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -119,5 +119,5 @@ func Callback_(c *gin.Context) {
 	}
 
 	c.Status(http.StatusNoContent)
-	rt.EndBlock()
+	rt.StepBack()
 }

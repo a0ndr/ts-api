@@ -4,58 +4,6 @@
     <option name="requestHistoryStates">
       <list>
         <requestHistoryState>
-          <option name="dateTime" value="1733595511529" />
-          <option name="id" value="2864f50a-e378-463f-8014-0e15ce8f5acb" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
-              <option name="method" value="GET" />
-              <option name="name" value="Transactions" />
-              <option name="queryParams">
-                <list>
-                  <queryParamState>
-                    <option name="key" value="iban" />
-                    <option name="value" value="SK4011000000004145138420" />
-                  </queryParamState>
-                </list>
-              </option>
-              <option name="sortWeight" value="3000000" />
-              <option name="url" value="{{URI}}/transactions?iban=SK4011000000004145138420" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJhY2NvdW50Ijp7ImliYW4iOiJTSzQwMTEwMDAwMDAwMDQxNDUxMzg0MjAiLCJjdXJyZW5jeSI6IkVVUiJ9LCJ0cmFuc2FjdGlvbnMiOlt7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNTYxMzYiLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4NzA1MzgxNjYvU1MyMjc2NTA0OTcwL0tTMDMwOCIsInZhcmlhYmxlU3ltYm9sIjoiODg3MDUzODE2NiIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi00Ni45OSwiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAyIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzAzMTEwMDAwMDAwMDgzMzIxOTg5ODgifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtODMzMjE5ODk4OCIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfSx7InRyYW5zYWN0aW9uSWQiOiIxNzMzNTI5NjAwNjg5NDciLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzg4MDA3NDQ3NTkvU1M4OTMxMDE4OTQwL0tTMDU1OCIsInZhcmlhYmxlU3ltYm9sIjoiODgwMDc0NDc1OSIsImJvb2tpbmdEYXRlIjoiMjAyNC0xMi0wNyIsInZhbHVlRGF0ZSI6IjIwMjQtMTItMDciLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOi02NC41MywiY3VycmVuY3kiOiJFVVIifSwiY3JlZGl0b3JOYW1lIjoiQ29tcGFueSAxIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzU5MTEwMDAwMDAwMDc0MzU5MDAyMjkifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAyIiwiZGVidG9yQWNjb3VudCI6eyJpYmFuIjoiU0s0MDExMDAwMDAwMDA0MTQ1MTM4NDIwIiwiY3VycmVuY3kiOiJFVVIifSwiZGVidG9yQWdlbnQiOnsiYmljIjoiVEFUUlNLQlhYWFgiLCJuYW1lIjoiIiwib3RoZXJJZGVudGlmaWNhdGlvbiI6IiJ9LCJyZW1pdHRhbmNlSW5mb3JtYXRpb25VbnN0cnVjdHVyZWQiOiJEb2JpZXJrYSIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtNzQzNTkwMDIyOSIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfV19" />
-              <option name="bodyString" value="{&#10;  &quot;account&quot;: {&#10;    &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;    &quot;currency&quot;: &quot;EUR&quot;&#10;  },&#10;  &quot;transactions&quot;: [&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960056136&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8870538166/SS2276504970/KS0308&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8870538166&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -46.99,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 2&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK0311000000008332198988&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-8332198988&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173352960068947&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS8800744759/SS8931018940/KS0558&quot;,&#10;      &quot;variableSymbol&quot;: &quot;8800744759&quot;,&#10;      &quot;bookingDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;valueDate&quot;: &quot;2024-12-07&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: -64.53,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Company 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK5911000000007435900229&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Dobierka&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-7435900229&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    }&#10;  ]&#10;}" />
-              <option name="code" value="200" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Sat, 07 Dec 2024 18:18:31 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="1581" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="2864f50a-e378-463f-8014-0e15ce8f5acb" />
-              <option name="message" value="OK" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;account&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;transactions&quot;:[{&quot;transactionId&quot;:&quot;173352960056136&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8870538166/SS2276504970/KS0308&quot;,&quot;variableSymbol&quot;:&quot;8870538166&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-46.99,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 2&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK0311000000008332198988&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-8332198988&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173352960068947&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS8800744759/SS8931018940/KS0558&quot;,&quot;variableSymbol&quot;:&quot;8800744759&quot;,&quot;bookingDate&quot;:&quot;2024-12-07&quot;,&quot;valueDate&quot;:&quot;2024-12-07&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:-64.53,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Company 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK5911000000007435900229&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Dobierka&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-7435900229&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false}]}" />
-              <option name="size" value="1581" />
-              <option name="time" value="328" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1733595513699" />
           <option name="id" value="c47ed714-5851-414c-956c-8421b445a7e6" />
           <option name="request">
@@ -527,95 +475,6 @@
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1734342675712" />
-          <option name="id" value="bd037e0b-3fdd-4def-87ea-1b88ede5fd41" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="0fef4a8f-f6c2-4c4f-8ea9-c2c0df59fa8e" />
-              <option name="method" value="GET" />
-              <option name="name" value="Payment Status" />
-              <option name="sortWeight" value="5000000" />
-              <option name="url" value="{{URI}}/payments/status/1BEC828B3EC1AE1810058DFE4DC40463" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6InBheW1lbnQgd2l0aCBJRCAnMUJFQzgyOEIzRUMxQUUxODEwMDU4REZFNERDNDA0NjMnIG5vdCBmb3VuZCIsInNwYW5JZCI6ImE4ZDVmYzg3M2VlYTI2YzgiLCJ0cmFjZUlkIjoiOWQxMDVlNGJiNzc5MGU0MjU0NjQ4NzFlNmExZDg5MmMifQ==" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;payment with ID '1BEC828B3EC1AE1810058DFE4DC40463' not found&quot;,&#10;  &quot;spanId&quot;: &quot;a8d5fc873eea26c8&quot;,&#10;  &quot;traceId&quot;: &quot;9d105e4bb7790e425464871e6a1d892c&quot;&#10;}" />
-              <option name="code" value="404" />
-              <option name="connectionEstablishingTime" value="9" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 16 Dec 2024 09:51:15 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="145" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="bd037e0b-3fdd-4def-87ea-1b88ede5fd41" />
-              <option name="message" value="Not Found" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;payment with ID '1BEC828B3EC1AE1810058DFE4DC40463' not found&quot;,&quot;spanId&quot;:&quot;a8d5fc873eea26c8&quot;,&quot;traceId&quot;:&quot;9d105e4bb7790e425464871e6a1d892c&quot;}" />
-              <option name="size" value="145" />
-              <option name="time" value="27" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1734342791523" />
-          <option name="id" value="32773bc2-1beb-43e6-8095-6097ccab2741" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="0fef4a8f-f6c2-4c4f-8ea9-c2c0df59fa8e" />
-              <option name="method" value="GET" />
-              <option name="name" value="Payment Status" />
-              <option name="sortWeight" value="5000000" />
-              <option name="url" value="{{URI}}/payments/status/B8A8905A0C307885830958EAE21E1FF0" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImZhaWxlZCB0byBjaGVjayBhdXRob3JpemF0aW9uIHN0YXR1czogdGF0cmEgYmFua2EgcmV0dXJuZWQgYSBub24tT0sgc3RhdHVzIGNvZGU6IDQwNCIsInNwYW5JZCI6ImQ4YWI5YzAyY2IxNzBkYWMiLCJ0cmFjZUlkIjoiMGIwMWEyYTk5M2MzYzI0YzA4NTRkNDQ4ZGUzYmUyM2MifXsiYXV0aG9yaXphdGlvblN0YXR1cyI6IiIsInRyYW5zYWN0aW9uU3RhdHVzIjoiQUNTQyJ9" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;failed to check authorization status: tatra banka returned a non-OK status code: 404&quot;,&#10;  &quot;spanId&quot;: &quot;d8ab9c02cb170dac&quot;,&#10;  &quot;traceId&quot;: &quot;0b01a2a993c3c24c0854d448de3be23c&quot;&#10;}" />
-              <option name="code" value="500" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 16 Dec 2024 09:53:11 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="222" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="32773bc2-1beb-43e6-8095-6097ccab2741" />
-              <option name="message" value="Internal Server Error" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;failed to check authorization status: tatra banka returned a non-OK status code: 404&quot;,&quot;spanId&quot;:&quot;d8ab9c02cb170dac&quot;,&quot;traceId&quot;:&quot;0b01a2a993c3c24c0854d448de3be23c&quot;}{&quot;authorizationStatus&quot;:&quot;&quot;,&quot;transactionStatus&quot;:&quot;ACSC&quot;}" />
-              <option name="size" value="222" />
-              <option name="time" value="253" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1734342903808" />
           <option name="id" value="6744aee5-3359-4af0-afcb-500f313a689c" />
           <option name="request">
@@ -700,56 +559,6 @@
               <option name="rawBodyString" value="{&quot;authorizationStatus&quot;:&quot;finalised&quot;,&quot;transactionStatus&quot;:&quot;ACSC&quot;}" />
               <option name="size" value="62" />
               <option name="time" value="333" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1734343739376" />
-          <option name="id" value="ced68b76-3a39-47a7-8e92-09afe74ebfe1" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;amount&quot;: &quot;1&quot;,&#10;  &quot;currency&quot;: &quot;EUR&quot;,&#10;  &quot;debtorIban&quot;: &quot;SK1911000000001913888635&quot;,&#10;  &quot;creditorIban&quot;: &quot;SK4011000000004145138420&quot;,&#10;  &quot;creditorName&quot;: &quot;:3&quot;,&#10;  &quot;note&quot;: &quot;:3&quot;,&#10;  &quot;type&quot;: &quot;instant-sepa-credit-transfers&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="ad6ab171-b834-45c2-bfef-b183e4468b6e" />
-              <option name="method" value="POST" />
-              <option name="name" value="Initialize Payment" />
-              <option name="sortWeight" value="4000000" />
-              <option name="url" value="{{URI}}/payments/init" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImZhaWxlZCB0byBpbml0aWFsaXplIHBheW1lbnQ6IHRhdHJhIGJhbmthIHJldHVybmVkIGEgbm9uLU9LIHN0YXR1cyBjb2RlOiA0MDAiLCJzcGFuSWQiOiJjMWZkMzRkOTg0YTYwMTgwIiwidHJhY2VJZCI6IjE2YTdmMzExM2IxMzVlNzAyODQ4ZDdjNTM2ZTE0Njc5In0=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;failed to initialize payment: tatra banka returned a non-OK status code: 400&quot;,&#10;  &quot;spanId&quot;: &quot;c1fd34d984a60180&quot;,&#10;  &quot;traceId&quot;: &quot;16a7f3113b135e702848d7c536e14679&quot;&#10;}" />
-              <option name="code" value="500" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 16 Dec 2024 10:08:59 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="161" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="ced68b76-3a39-47a7-8e92-09afe74ebfe1" />
-              <option name="message" value="Internal Server Error" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;failed to initialize payment: tatra banka returned a non-OK status code: 400&quot;,&quot;spanId&quot;:&quot;c1fd34d984a60180&quot;,&quot;traceId&quot;:&quot;16a7f3113b135e702848d7c536e14679&quot;}" />
-              <option name="size" value="161" />
-              <option name="time" value="371" />
             </responseState>
           </option>
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
@@ -1475,404 +1284,6 @@
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1735336414805" />
-          <option name="id" value="f35e8bc8-452e-4679-a278-a56066c4ae49" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjA4OjM0KzAxOjAwIiwidG9rZW4iOiIwMTk0MGExYy00ZTJmLTc3MDgtODU3MS0xZWI2ZDM0OTFiZDciLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBYTliYmQ5NTYtMWViMi00OTFhLWEwMjUtY2QxMjAwNjQ2MmNkXHUwMDI2c3RhdGU9eGJXTWtjZnBJb2tkWnJVYSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:08:34+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a1c-4e2f-7708-8571-1eb6d3491bd7&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3Aa9bbd956-1eb2-491a-a025-cd12006462cd&amp;state=xbWMkcfpIokdZrUa&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 21:53:34 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="f35e8bc8-452e-4679-a278-a56066c4ae49" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:08:34+01:00&quot;,&quot;token&quot;:&quot;01940a1c-4e2f-7708-8571-1eb6d3491bd7&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3Aa9bbd956-1eb2-491a-a025-cd12006462cd\u0026state=xbWMkcfpIokdZrUa&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="480" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735336425804" />
-          <option name="id" value="27b9e0fc-e89b-462e-b047-68eb00e56b16" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjA4OjQ1KzAxOjAwIiwidG9rZW4iOiIwMTk0MGExYy03OTNjLTc4ODYtODFjMS1jNmNiZGRlMDcwNzYiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBMjA1ZjJjZWQtMTdhZi00MThmLTllZTYtMWZhNTc1MGExOTI3XHUwMDI2c3RhdGU9SUFpZ1F3c0VvYVJSdEtWeiJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:08:45+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a1c-793c-7886-81c1-c6cbdde07076&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A205f2ced-17af-418f-9ee6-1fa5750a1927&amp;state=IAigQwsEoaRRtKVz&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 21:53:45 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="27b9e0fc-e89b-462e-b047-68eb00e56b16" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:08:45+01:00&quot;,&quot;token&quot;:&quot;01940a1c-793c-7886-81c1-c6cbdde07076&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A205f2ced-17af-418f-9ee6-1fa5750a1927\u0026state=IAigQwsEoaRRtKVz&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="480" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735336433573" />
-          <option name="id" value="a50be3ae-a0db-433a-a033-f6f508a3b847" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjA4OjUzKzAxOjAwIiwidG9rZW4iOiIwMTk0MGExYy05Nzk0LTdiYzYtYTliNS02ZjMzNWZjODk5ZjciLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNGFjNjg2ZTQtMGUzZi00NmYzLTg4ZGMtMmZhYzM5YjQ4ODk0XHUwMDI2c3RhdGU9elhacVpkaUp0Z2pVSFJUdSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:08:53+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a1c-9794-7bc6-a9b5-6f335fc899f7&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A4ac686e4-0e3f-46f3-88dc-2fac39b48894&amp;state=zXZqZdiJtgjUHRTu&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 21:53:53 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="a50be3ae-a0db-433a-a033-f6f508a3b847" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:08:53+01:00&quot;,&quot;token&quot;:&quot;01940a1c-9794-7bc6-a9b5-6f335fc899f7&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A4ac686e4-0e3f-46f3-88dc-2fac39b48894\u0026state=zXZqZdiJtgjUHRTu&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="401" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735336526205" />
-          <option name="id" value="16b90cd1-f276-4ab6-9aaa-f62326635f5e" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjEwOjI2KzAxOjAwIiwidG9rZW4iOiIwMTk0MGExZS0wMTY3LTc3MzAtOTA0OS1kMjkzYWQ0MTA1ODQiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBOTY1MDUwNzUtNWU1ZC00YTNlLTk3NjItZjZlZjE1OWIzZGRhXHUwMDI2c3RhdGU9VVl1QW9pcG9WRFdXWHRjSSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:10:26+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a1e-0167-7730-9049-d293ad410584&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A96505075-5e5d-4a3e-9762-f6ef159b3dda&amp;state=UYuAoipoVDWWXtcI&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="7" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 21:55:26 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="16b90cd1-f276-4ab6-9aaa-f62326635f5e" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:10:26+01:00&quot;,&quot;token&quot;:&quot;01940a1e-0167-7730-9049-d293ad410584&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A96505075-5e5d-4a3e-9762-f6ef159b3dda\u0026state=UYuAoipoVDWWXtcI&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="679" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735336570124" />
-          <option name="id" value="4adb18ed-f2e0-4ea2-8245-84a051d767dc" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjExOjEwKzAxOjAwIiwidG9rZW4iOiIwMTk0MGExZS1hY2ZhLTcyMDctYmFiZS00ZDA4OGE2MTI5ZmMiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBZDJmZTgzYjYtZDAwOC00NDVhLWI2Y2UtNWJjOGZiMzM4MWFhXHUwMDI2c3RhdGU9WEN4TEhoT25RcWhnSnJKdSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:11:10+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a1e-acfa-7207-babe-4d088a6129fc&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3Ad2fe83b6-d008-445a-b6ce-5bc8fb3381aa&amp;state=XCxLHhOnQqhgJrJu&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="10" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 21:56:10 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="4adb18ed-f2e0-4ea2-8245-84a051d767dc" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:11:10+01:00&quot;,&quot;token&quot;:&quot;01940a1e-acfa-7207-babe-4d088a6129fc&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3Ad2fe83b6-d008-445a-b6ce-5bc8fb3381aa\u0026state=XCxLHhOnQqhgJrJu&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="891" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735336619227" />
-          <option name="id" value="004b979a-d94d-4aed-ac63-38a9b4661707" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjExOjU5KzAxOjAwIiwidG9rZW4iOiIwMTk0MGExZi02Yzg4LTc0YjMtOWJjMC02NzU4Zjk1NGQ2ODIiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNDYzOWU1MjAtN2QwNy00YTg4LTk1ZTUtZGE4OTMwOGQ0OWQ5XHUwMDI2c3RhdGU9cGtHdnR5VGRseldMakdVbSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:11:59+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a1f-6c88-74b3-9bc0-6758f954d682&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A4639e520-7d07-4a88-95e5-da89308d49d9&amp;state=pkGvtyTdlzWLjGUm&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="15" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 21:56:59 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="004b979a-d94d-4aed-ac63-38a9b4661707" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:11:59+01:00&quot;,&quot;token&quot;:&quot;01940a1f-6c88-74b3-9bc0-6758f954d682&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A4639e520-7d07-4a88-95e5-da89308d49d9\u0026state=pkGvtyTdlzWLjGUm&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="552" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735336819451" />
-          <option name="id" value="24938367-1ccd-45e7-ba98-14a032a4d0ef" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI3VDIzOjE1OjE5KzAxOjAwIiwidG9rZW4iOiIwMTk0MGEyMi03YWU4LTcyYmEtYjIyOC1jMjg2M2E3ZjM2NjIiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBMGEyOGVhY2MtMTNhMC00NmMxLWIzNTUtMjgyOTA2MGVlYzJkXHUwMDI2c3RhdGU9U0tLdVdORGRsbVd3QXNUaiJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-27T23:15:19+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940a22-7ae8-72ba-b228-c2863a7f3662&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A0a28eacc-13a0-46c1-b355-2829060eec2d&amp;state=SKKuWNDdlmWwAsTj&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="10" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 22:00:19 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="24938367-1ccd-45e7-ba98-14a032a4d0ef" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-27T23:15:19+01:00&quot;,&quot;token&quot;:&quot;01940a22-7ae8-72ba-b228-c2863a7f3662&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A0a28eacc-13a0-46c1-b355-2829060eec2d\u0026state=SKKuWNDdlmWwAsTj&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="793" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1735339895910" />
-          <option name="id" value="dfffb3b1-8b8c-4eaa-9226-62c3f562813c" />
-          <option name="request">
-            <requestState>
-              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
-              <option name="method" value="GET" />
-              <option name="name" value="Accounts" />
-              <option name="sortWeight" value="2000000" />
-              <option name="url" value="{{URI}}/accounts" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImZhaWxlZCB0byBsaXN0IGFjY291bnRzOiBpbnZhbGlkIHRva2VuIiwidHJhY2VJZCI6ImVhNTc5MjVmNzBhOTk5NTYwNTM2N2UzNGY0M2FkNTQwIn0=" />
-              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;failed to list accounts: invalid token&quot;,&#10;  &quot;traceId&quot;: &quot;ea57925f70a9995605367e34f43ad540&quot;&#10;}" />
-              <option name="code" value="403" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Fri, 27 Dec 2024 22:51:35 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="95" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="dfffb3b1-8b8c-4eaa-9226-62c3f562813c" />
-              <option name="message" value="Forbidden" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;error&quot;:&quot;failed to list accounts: invalid token&quot;,&quot;traceId&quot;:&quot;ea57925f70a9995605367e34f43ad540&quot;}" />
-              <option name="size" value="95" />
-              <option name="time" value="326" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1735339966034" />
           <option name="id" value="5abd7dbf-df33-4e79-adcf-d3940a690a43" />
           <option name="request">
@@ -2248,8 +1659,8 @@
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1735378531774" />
-          <option name="id" value="c1182cf8-36f7-4adf-96ad-efeb3474f354" />
+          <option name="dateTime" value="1736800320901" />
+          <option name="id" value="c3327606-efc7-4d4e-86ed-a5d632cea7bb" />
           <option name="request">
             <requestState>
               <option name="body">
@@ -2267,31 +1678,40 @@
           </option>
           <option name="response">
             <responseState>
-              <option name="code" value="500" />
-              <option name="connectionEstablishingTime" value="444" />
-              <option name="contentType" value="application/octet-stream" />
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjQ3OjAwKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE1ZC1iZDgwLTcyOWQtYjZhOS04MTU0MjYwZTY2NTYiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNTljMDg4NDQtNzdjMS00MTliLTkwODYtNGZlOTg4M2Q3MzRiXHUwMDI2c3RhdGU9WHJUWFRYRGhqdGVVSVNyQiJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:47:00+01:00&quot;,&#10;  &quot;token&quot;: &quot;0194615d-bd80-729d-b6a9-8154260e6656&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A59c08844-77c1-419b-9086-4fe9883d734b&amp;state=XrTXTXDhjteUISrB&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
               <option name="headers">
                 <list>
                   <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
                     <option name="key" value="Date" />
-                    <option name="value" value="Sat, 28 Dec 2024 09:35:31 GMT" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:32:00 GMT" />
                   </headerState>
                   <headerState>
                     <option name="key" value="Content-Length" />
-                    <option name="value" value="0" />
+                    <option name="value" value="465" />
                   </headerState>
                 </list>
               </option>
-              <option name="id" value="c1182cf8-36f7-4adf-96ad-efeb3474f354" />
-              <option name="message" value="Internal Server Error" />
-              <option name="time" value="502" />
+              <option name="id" value="c3327606-efc7-4d4e-86ed-a5d632cea7bb" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:47:00+01:00&quot;,&quot;token&quot;:&quot;0194615d-bd80-729d-b6a9-8154260e6656&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A59c08844-77c1-419b-9086-4fe9883d734b\u0026state=XrTXTXDhjteUISrB&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="415" />
             </responseState>
           </option>
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1735378774457" />
-          <option name="id" value="ed3d3bbb-76b5-4bd7-8228-e3d3e31c9061" />
+          <option name="dateTime" value="1736800353470" />
+          <option name="id" value="101acd5a-c6fd-403c-837c-5710da919ffa" />
           <option name="request">
             <requestState>
               <option name="body">
@@ -2309,31 +1729,40 @@
           </option>
           <option name="response">
             <responseState>
-              <option name="code" value="500" />
-              <option name="connectionEstablishingTime" value="13" />
-              <option name="contentType" value="application/octet-stream" />
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjQ3OjMzKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE1ZS0zY2E2LTdiMDYtYWJiYi03YjRhYzY1MWMyNTIiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNWFkZjQ1OGYtODg5Yy00YjQ0LTkyMTgtNTY2YjkxYzZlYzU4XHUwMDI2c3RhdGU9Y3N0aG5WU2dDZkl2VEdCRCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:47:33+01:00&quot;,&#10;  &quot;token&quot;: &quot;0194615e-3ca6-7b06-abbb-7b4ac651c252&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A5adf458f-889c-4b44-9218-566b91c6ec58&amp;state=csthnVSgCfIvTGBD&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
               <option name="headers">
                 <list>
                   <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
                     <option name="key" value="Date" />
-                    <option name="value" value="Sat, 28 Dec 2024 09:39:34 GMT" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:32:33 GMT" />
                   </headerState>
                   <headerState>
                     <option name="key" value="Content-Length" />
-                    <option name="value" value="0" />
+                    <option name="value" value="465" />
                   </headerState>
                 </list>
               </option>
-              <option name="id" value="ed3d3bbb-76b5-4bd7-8228-e3d3e31c9061" />
-              <option name="message" value="Internal Server Error" />
-              <option name="time" value="26" />
+              <option name="id" value="101acd5a-c6fd-403c-837c-5710da919ffa" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:47:33+01:00&quot;,&quot;token&quot;:&quot;0194615e-3ca6-7b06-abbb-7b4ac651c252&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A5adf458f-889c-4b44-9218-566b91c6ec58\u0026state=csthnVSgCfIvTGBD&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="432" />
             </responseState>
           </option>
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1735380324388" />
-          <option name="id" value="e259d683-ee4b-40a2-8e52-3f36f507ce05" />
+          <option name="dateTime" value="1736800490262" />
+          <option name="id" value="c30a628b-3f06-4d32-9ac2-45db0d22b7dd" />
           <option name="request">
             <requestState>
               <option name="body">
@@ -2351,8 +1780,519 @@
           </option>
           <option name="response">
             <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI0LTEyLTI4VDExOjIwOjI0KzAxOjAwIiwidG9rZW4iOiIwMTk0MGNiYS01MDBkLTcxM2UtYmJlNi01YjBkZWQ1OTBmMzkiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNzVmMGY3OTYtYjJlNy00MDJiLThmZWQtZTgwNzIzM2YzNGEzXHUwMDI2c3RhdGU9WWNxVVVBVHVVb3pRQVdwVSJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2024-12-28T11:20:24+01:00&quot;,&#10;  &quot;token&quot;: &quot;01940cba-500d-713e-bbe6-5b0ded590f39&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A75f0f796-b2e7-402b-8fed-e807233f34a3&amp;state=YcqUUATuUozQAWpU&quot;&#10;}" />
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjQ5OjUwKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE2MC01MzBmLTc3YmMtOTdlZS1kYmYyNjlkMmVjNTciLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBODJmOWY3YTItMzg1MS00MDVhLWFjZWQtOGFhZGNjZjdjMzgxXHUwMDI2c3RhdGU9VVRDZEpldEtUZXphWWhaWCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:49:50+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946160-530f-77bc-97ee-dbf269d2ec57&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A82f9f7a2-3851-405a-aced-8aadccf7c381&amp;state=UTCdJetKTezaYhZX&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:34:50 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="c30a628b-3f06-4d32-9ac2-45db0d22b7dd" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:49:50+01:00&quot;,&quot;token&quot;:&quot;01946160-530f-77bc-97ee-dbf269d2ec57&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A82f9f7a2-3851-405a-aced-8aadccf7c381\u0026state=UTCdJetKTezaYhZX&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="430" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736800602282" />
+          <option name="id" value="2e32dd41-9022-4b29-b46f-38952efe4a69" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjUxOjQyKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE2Mi0wODllLTdjMjEtOGM5Yi1hNTgyZGM0NTIzYmIiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNjJlZGRmNmItMDMzNC00ZTBiLTg5NDItM2E2OTNlMWFjMGE2XHUwMDI2c3RhdGU9dVZteWRVd0VXYnhXTlpPdCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:51:42+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946162-089e-7c21-8c9b-a582dc4523bb&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A62eddf6b-0334-4e0b-8942-3a693e1ac0a6&amp;state=uVmydUwEWbxWNZOt&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:36:42 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2e32dd41-9022-4b29-b46f-38952efe4a69" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:51:42+01:00&quot;,&quot;token&quot;:&quot;01946162-089e-7c21-8c9b-a582dc4523bb&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A62eddf6b-0334-4e0b-8942-3a693e1ac0a6\u0026state=uVmydUwEWbxWNZOt&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="371" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736801526722" />
+          <option name="id" value="b3652431-7d08-47f1-93b4-150a4d5f0119" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIyOjA3OjA2KzAxOjAwIiwidG9rZW4iOiIwMTk0NjE3MC0yM2JhLTcyMGQtYmNlMi00NTNkNzZkODlmZjgiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBMmQ1ZDRmOTItZmJmOC00MWU1LWJhMDgtZTNjMDhjYWYyNTY1XHUwMDI2c3RhdGU9U2RoQUtMWUhzZWpTaXpLcSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T22:07:06+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946170-23ba-720d-bce2-453d76d89ff8&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A2d5d4f92-fbf8-41e5-ba08-e3c08caf2565&amp;state=SdhAKLYHsejSizKq&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:52:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b3652431-7d08-47f1-93b4-150a4d5f0119" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T22:07:06+01:00&quot;,&quot;token&quot;:&quot;01946170-23ba-720d-bce2-453d76d89ff8&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A2d5d4f92-fbf8-41e5-ba08-e3c08caf2565\u0026state=SdhAKLYHsejSizKq&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="545" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736801605974" />
+          <option name="id" value="0a2a7f2f-a78c-4c51-8a56-a221aaf45da4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIyOjA4OjI1KzAxOjAwIiwidG9rZW4iOiIwMTk0NjE3MS01OTRmLTcxMWQtYTkzYS02MjUwMzA2OGYzZDkiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBZmI2MDVhYmQtODgxOC00M2Y2LWEwMTUtMDY5YjNmZTlmZmQ2XHUwMDI2c3RhdGU9dElvQXJJSlpMWXdnQnlZSyJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T22:08:25+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946171-594f-711d-a93a-62503068f3d9&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3Afb605abd-8818-43f6-a015-069b3fe9ffd6&amp;state=tIoArIJZLYwgByYK&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:53:25 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="0a2a7f2f-a78c-4c51-8a56-a221aaf45da4" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T22:08:25+01:00&quot;,&quot;token&quot;:&quot;01946171-594f-711d-a93a-62503068f3d9&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3Afb605abd-8818-43f6-a015-069b3fe9ffd6\u0026state=tIoArIJZLYwgByYK&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="496" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736801654732" />
+          <option name="id" value="7ac75046-2512-4af1-aef9-a9067a62152a" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIyOjA5OjE0KzAxOjAwIiwidG9rZW4iOiIwMTk0NjE3Mi0xN2M0LTcwZmYtOTBjZi0wNGRjZDhjZDM4YWQiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBMTc2MzVlMjctNzY1Ny00YzdjLWIxN2UtNzY5ZDAzMjIzNWRhXHUwMDI2c3RhdGU9cFFZTGJQTEZaUWZjeWtCYSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T22:09:14+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946172-17c4-70ff-90cf-04dcd8cd38ad&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A17635e27-7657-4c7c-b17e-769d032235da&amp;state=pQYLbPLFZQfcykBa&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:54:14 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7ac75046-2512-4af1-aef9-a9067a62152a" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T22:09:14+01:00&quot;,&quot;token&quot;:&quot;01946172-17c4-70ff-90cf-04dcd8cd38ad&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A17635e27-7657-4c7c-b17e-769d032235da\u0026state=pQYLbPLFZQfcykBa&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="408" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736801826539" />
+          <option name="id" value="5fed39d4-4ea1-4ac6-8cc4-57b46fe1d52e" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIyOjEyOjA2KzAxOjAwIiwidG9rZW4iOiIwMTk0NjE3NC1iNmU0LTc3NDMtYWRiNy03NzUyYzJiZGY3ODAiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBZmQ1ODYxMGQtNmUzZS00MzMxLTk3MjctNmRiOTRhYjUwMmQwXHUwMDI2c3RhdGU9dUdqeEZQelNHZmpnTnFYSiJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T22:12:06+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946174-b6e4-7743-adb7-7752c2bdf780&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3Afd58610d-6e3e-4331-9727-6db94ab502d0&amp;state=uGjxFPzSGfjgNqXJ&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:57:06 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="5fed39d4-4ea1-4ac6-8cc4-57b46fe1d52e" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T22:12:06+01:00&quot;,&quot;token&quot;:&quot;01946174-b6e4-7743-adb7-7752c2bdf780&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3Afd58610d-6e3e-4331-9727-6db94ab502d0\u0026state=uGjxFPzSGfjgNqXJ&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="416" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736801865759" />
+          <option name="id" value="2f27a3e9-c6d5-497e-bdd9-5755478be6ac" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIyOjEyOjQ1KzAxOjAwIiwidG9rZW4iOiIwMTk0NjE3NS01MDE1LTdjOGMtOGZkMC04MGQ3ZjY5NGZlZWEiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBZmZhOWQ5ZmUtMjMzMi00NTI3LWE4MGUtMjVhNmFiZjhkN2M2XHUwMDI2c3RhdGU9d05Wb0JnZHVoaEV6aGRGeCJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T22:12:45+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946175-5015-7c8c-8fd0-80d7f694feea&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3Affa9d9fe-2332-4527-a80e-25a6abf8d7c6&amp;state=wNVoBgduhhEzhdFx&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 20:57:45 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2f27a3e9-c6d5-497e-bdd9-5755478be6ac" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T22:12:45+01:00&quot;,&quot;token&quot;:&quot;01946175-5015-7c8c-8fd0-80d7f694feea&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3Affa9d9fe-2332-4527-a80e-25a6abf8d7c6\u0026state=wNVoBgduhhEzhdFx&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="498" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736802071886" />
+          <option name="id" value="2c1338e2-09b0-4826-bee0-d00923079294" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIyOjE2OjExKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE3OC03NTQ1LTc3MGUtYTc3Yi01MTgxNjI4NDU5ZTUiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBM2U5MDU4NzEtZDUxMC00NzJlLTg1YzEtNzM2MGVmYWFlZDAwXHUwMDI2c3RhdGU9dUtySGNtbGJLQ2J3cGpjcSJ9" />
+              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T22:16:11+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946178-7545-770e-a77b-5181628459e5&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A3e905871-d510-472e-85c1-7360efaaed00&amp;state=uKrHcmlbKCbwpjcq&quot;&#10;}" />
+              <option name="code" value="201" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 21:01:11 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="465" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2c1338e2-09b0-4826-bee0-d00923079294" />
+              <option name="message" value="Created" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T22:16:11+01:00&quot;,&quot;token&quot;:&quot;01946178-7545-770e-a77b-5181628459e5&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A3e905871-d510-472e-85c1-7360efaaed00\u0026state=uKrHcmlbKCbwpjcq&quot;}" />
+              <option name="size" value="465" />
+              <option name="time" value="377" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736802097637" />
+          <option name="id" value="69fe3464-a81c-4367-98bb-15d20a733da4" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="4f0f9b43-f135-4c22-8dc8-c9970991aedd" />
+              <option name="method" value="GET" />
+              <option name="name" value="Accounts" />
+              <option name="sortWeight" value="2000000" />
+              <option name="url" value="{{URI}}/accounts" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50cyI6W3siY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyBQcmVtaXVtIiwiYWNjb3VudFJlZmVyZW5jZSI6eyJpYmFuIjoiU0sxOTExMDAwMDAwMDAxOTEzODg4NjM1IiwiY3VycmVuY3kiOiJFVVIifSwiZGlzcGxheU5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwidXNhZ2UiOiJPUkdBIiwiYmFua05hbWUiOiJUYXRyYSBiYW5rYSIsImNvbnNlbnRFeHBpcmF0aW9uRGF0ZSI6IjIwMjUtMDItMDJUMjI6MDE6MzcuNzA3KzAxOjAwIiwiZGF0ZVVwZGF0ZWQiOiIyMDI1LTAxLTEzVDIyOjAxOjM3LjcwNyswMTowMCIsImFjY291bnRJZCI6ImUwYjUzM2ExLTdhNWItNDQxMS04MjMwLTA0ZTA5ZDg2ZWMwNiIsImJhbGFuY2VzIjpbeyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoyNTAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQXZhaWxhYmxlIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjUtMDEtMTNUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjI1MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImludGVyaW1Cb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNS0wMS0xM1QyMDoxNjowMCswMTowMCJ9LHsiYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MjUwMDAuMn0sImJhbGFuY2VUeXBlIjoiY2xvc2luZ0Jvb2tlZCIsInJlZmVyZW5jZURhdGUiOiIyMDI1LTAxLTEyVDAwOjAwOjAwKzAxOjAwIn1dLCJuYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMSIsImJpYyI6IlRBVFJTS0JYWFhYIiwic3RhdHVzIjoiZW5hYmxlZCJ9LHsiY2FzaEFjY291bnRUeXBlIjoiQ0FDQyIsImJhbmtDb2RlIjoiVEJTSyIsInByb2R1Y3QiOiJUYXRyYSBCdXNpbmVzcyIsImFjY291bnRSZWZlcmVuY2UiOnsiaWJhbiI6IlNLNDAxMTAwMDAwMDAwNDE0NTEzODQyMCIsImN1cnJlbmN5IjoiRVVSIn0sImRpc3BsYXlOYW1lIjoiVmXEvmvDoSB6w6FzaWVsa2Egcy5yLm8uIC0gMiIsInVzYWdlIjoiT1JHQSIsImJhbmtOYW1lIjoiVGF0cmEgYmFua2EiLCJjb25zZW50RXhwaXJhdGlvbkRhdGUiOiIyMDI1LTAyLTAyVDIyOjAxOjM3LjcwOCswMTowMCIsImRhdGVVcGRhdGVkIjoiMjAyNS0wMS0xM1QyMjowMTozNy43MDgrMDE6MDAiLCJhY2NvdW50SWQiOiI4OGJmNWM5MS0zN2UxLTRiZjEtYTU4My1hNDIyYTdiYzM3YWIiLCJiYWxhbmNlcyI6W3siYmFsYW5jZUFtb3VudCI6eyJjdXJyZW5jeSI6IkVVUiIsImFtb3VudCI6MTgwMDAuMn0sImJhbGFuY2VUeXBlIjoiaW50ZXJpbUF2YWlsYWJsZSIsInJlZmVyZW5jZURhdGUiOiIyMDI1LTAxLTExVDIwOjE2OjAwKzAxOjAwIn0seyJiYWxhbmNlQW1vdW50Ijp7ImN1cnJlbmN5IjoiRVVSIiwiYW1vdW50IjoxODAwMC4yfSwiYmFsYW5jZVR5cGUiOiJpbnRlcmltQm9va2VkIiwicmVmZXJlbmNlRGF0ZSI6IjIwMjUtMDEtMTFUMjA6MTY6MDArMDE6MDAifSx7ImJhbGFuY2VBbW91bnQiOnsiY3VycmVuY3kiOiJFVVIiLCJhbW91bnQiOjE4MDAwLjJ9LCJiYWxhbmNlVHlwZSI6ImNsb3NpbmdCb29rZWQiLCJyZWZlcmVuY2VEYXRlIjoiMjAyNS0wMS0xMlQwMDowMDowMCswMTowMCJ9XSwibmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDIiLCJiaWMiOiJUQVRSU0tCWFhYWCIsInN0YXR1cyI6ImVuYWJsZWQifV19" />
+              <option name="bodyString" value="{&#10;  &quot;accounts&quot;: [&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business Premium&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2025-02-02T22:01:37.707+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2025-01-13T22:01:37.707+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2025-01-13T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2025-01-13T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 25000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2025-01-12T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    },&#10;    {&#10;      &quot;cashAccountType&quot;: &quot;CACC&quot;,&#10;      &quot;bankCode&quot;: &quot;TBSK&quot;,&#10;      &quot;product&quot;: &quot;Tatra Business&quot;,&#10;      &quot;accountReference&quot;: {&#10;        &quot;iban&quot;: &quot;SK4011000000004145138420&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;displayName&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;usage&quot;: &quot;ORGA&quot;,&#10;      &quot;bankName&quot;: &quot;Tatra banka&quot;,&#10;      &quot;consentExpirationDate&quot;: &quot;2025-02-02T22:01:37.708+01:00&quot;,&#10;      &quot;dateUpdated&quot;: &quot;2025-01-13T22:01:37.708+01:00&quot;,&#10;      &quot;accountId&quot;: &quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&#10;      &quot;balances&quot;: [&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimAvailable&quot;,&#10;          &quot;referenceDate&quot;: &quot;2025-01-11T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;interimBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2025-01-11T20:16:00+01:00&quot;&#10;        },&#10;        {&#10;          &quot;balanceAmount&quot;: {&#10;            &quot;currency&quot;: &quot;EUR&quot;,&#10;            &quot;amount&quot;: 18000.2&#10;          },&#10;          &quot;balanceType&quot;: &quot;closingBooked&quot;,&#10;          &quot;referenceDate&quot;: &quot;2025-01-12T00:00:00+01:00&quot;&#10;        }&#10;      ],&#10;      &quot;name&quot;: &quot;Veľká zásielka s.r.o. - 2&quot;,&#10;      &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;      &quot;status&quot;: &quot;enabled&quot;&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 21:01:37 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1740" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="69fe3464-a81c-4367-98bb-15d20a733da4" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;accounts&quot;:[{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business Premium&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2025-02-02T22:01:37.707+01:00&quot;,&quot;dateUpdated&quot;:&quot;2025-01-13T22:01:37.707+01:00&quot;,&quot;accountId&quot;:&quot;e0b533a1-7a5b-4411-8230-04e09d86ec06&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2025-01-13T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2025-01-13T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:25000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2025-01-12T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;},{&quot;cashAccountType&quot;:&quot;CACC&quot;,&quot;bankCode&quot;:&quot;TBSK&quot;,&quot;product&quot;:&quot;Tatra Business&quot;,&quot;accountReference&quot;:{&quot;iban&quot;:&quot;SK4011000000004145138420&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;displayName&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;usage&quot;:&quot;ORGA&quot;,&quot;bankName&quot;:&quot;Tatra banka&quot;,&quot;consentExpirationDate&quot;:&quot;2025-02-02T22:01:37.708+01:00&quot;,&quot;dateUpdated&quot;:&quot;2025-01-13T22:01:37.708+01:00&quot;,&quot;accountId&quot;:&quot;88bf5c91-37e1-4bf1-a583-a422a7bc37ab&quot;,&quot;balances&quot;:[{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimAvailable&quot;,&quot;referenceDate&quot;:&quot;2025-01-11T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;interimBooked&quot;,&quot;referenceDate&quot;:&quot;2025-01-11T20:16:00+01:00&quot;},{&quot;balanceAmount&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:18000.2},&quot;balanceType&quot;:&quot;closingBooked&quot;,&quot;referenceDate&quot;:&quot;2025-01-12T00:00:00+01:00&quot;}],&quot;name&quot;:&quot;Veľká zásielka s.r.o. - 2&quot;,&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;status&quot;:&quot;enabled&quot;}]}" />
+              <option name="size" value="1740" />
+              <option name="time" value="87" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736802113113" />
+          <option name="id" value="1c640335-1428-4c92-b969-eddbc66774db" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="37e41ece-e201-42e1-8233-bb3dc12fe5a3" />
+              <option name="method" value="GET" />
+              <option name="name" value="Transactions" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="disabled" value="true" />
+                    <option name="key" value="iban" />
+                    <option name="value" value="SK401100000000414513842" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="accountId" />
+                    <option name="value" value="e0b533a1-7a5b-4411-8230-04e09d86ec06" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="sortWeight" value="3000000" />
+              <option name="url" value="{{URI}}/transactions?accountId=e0b533a1-7a5b-4411-8230-04e09d86ec06" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhY2NvdW50Ijp7ImliYW4iOiJTSzE5MTEwMDAwMDAwMDE5MTM4ODg2MzUiLCJjdXJyZW5jeSI6IkVVUiJ9LCJ0cmFuc2FjdGlvbnMiOlt7InRyYW5zYWN0aW9uSWQiOiIxNzM2NzI2NDAwNzg1NDAiLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzQwNDAzOTYzOTAvU1M2MzExMDAxNTg4L0tTMDMwOCIsInZhcmlhYmxlU3ltYm9sIjoiNDA0MDM5NjM5MCIsImJvb2tpbmdEYXRlIjoiMjAyNS0wMS0xMyIsInZhbHVlRGF0ZSI6IjIwMjUtMDEtMTMiLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOjQ1LCJjdXJyZW5jeSI6IkVVUiJ9LCJjcmVkaXRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzE5MTEwMDAwMDAwMDE5MTM4ODg2MzUifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJTYW5kb3ggcHJvdmlkZXIgMiIsImRlYnRvckFjY291bnQiOnsiaWJhbiI6IlNLNjgxMTAwMDAwMDAwMDg3NjgzMzQ5NiIsImN1cnJlbmN5IjoiRVVSIn0sImRlYnRvckFnZW50Ijp7ImJpYyI6IlRBVFJTS0JYWFhYIiwibmFtZSI6IiIsIm90aGVySWRlbnRpZmljYXRpb24iOiIifSwicmVtaXR0YW5jZUluZm9ybWF0aW9uVW5zdHJ1Y3R1cmVkIjoiVWhyYWRhIGZhIDIwMjUtMDEgMDM5MDcwIiwiYWRkaXRpb25hbEluZm9ybWF0aW9uIjoiQ1NPICAgICAxMTAwLzAwMDAwMC04NzY4MzM0OTYiLCJiYW5rVHJhbnNhY3Rpb25Db2RlIjoiWFRORC1OVEFWLU5UQVYiLCJpc1JldmVyc2FsIjpmYWxzZX0seyJ0cmFuc2FjdGlvbklkIjoiMTczNjcyNjQwMDU5MTA2IiwidHJhbnNhY3Rpb25TdGF0ZSI6IkJPT0tFRCIsImVuZFRvRW5kSWQiOiIvVlM0ODgzNjMxNjczL1NTNzc3OTg5MzU0Mi9LUzAwOCIsInZhcmlhYmxlU3ltYm9sIjoiNDg4MzYzMTY3MyIsImJvb2tpbmdEYXRlIjoiMjAyNS0wMS0xMyIsInZhbHVlRGF0ZSI6IjIwMjUtMDEtMTMiLCJ0cmFuc2FjdGlvbkFtb3VudCI6eyJhbW91bnQiOjM1LjI4LCJjdXJyZW5jeSI6IkVVUiJ9LCJjcmVkaXRvck5hbWUiOiJWZcS+a8OhIHrDoXNpZWxrYSBzLnIuby4gLSAxIiwiY3JlZGl0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzE5MTEwMDAwMDAwMDE5MTM4ODg2MzUifSwiY3JlZGl0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sImRlYnRvck5hbWUiOiJDb3JwIFgiLCJkZWJ0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzU4MTEwMDAwMDAwMDcyNTY4OTA5MTgiLCJjdXJyZW5jeSI6IkVVUiJ9LCJkZWJ0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sInJlbWl0dGFuY2VJbmZvcm1hdGlvblVuc3RydWN0dXJlZCI6IlVocmFkYSBmYSAyMDI1LTAxIDExNjA4NiIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtNzI1Njg5MDkxOCIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfSx7InRyYW5zYWN0aW9uSWQiOiIxNzM2NzI2NDAwNTczODYiLCJ0cmFuc2FjdGlvblN0YXRlIjoiQk9PS0VEIiwiZW5kVG9FbmRJZCI6Ii9WUzk5MDI4MDkwNjkvU1MxODk4ODY4NDA1L0tTMDA4IiwidmFyaWFibGVTeW1ib2wiOiI5OTAyODA5MDY5IiwiYm9va2luZ0RhdGUiOiIyMDI1LTAxLTEzIiwidmFsdWVEYXRlIjoiMjAyNS0wMS0xMyIsInRyYW5zYWN0aW9uQW1vdW50Ijp7ImFtb3VudCI6MzcuNjksImN1cnJlbmN5IjoiRVVSIn0sImNyZWRpdG9yTmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDEiLCJjcmVkaXRvckFjY291bnQiOnsiaWJhbiI6IlNLMTkxMTAwMDAwMDAwMTkxMzg4ODYzNSJ9LCJjcmVkaXRvckFnZW50Ijp7ImJpYyI6IlRBVFJTS0JYWFhYIiwibmFtZSI6IiIsIm90aGVySWRlbnRpZmljYXRpb24iOiIifSwiZGVidG9yTmFtZSI6IkRvcHJhdm5hIHNwb2xvY25vc3QiLCJkZWJ0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzE2MTEwMDAwMDAwMDczODgyNDA1MzgiLCJjdXJyZW5jeSI6IkVVUiJ9LCJkZWJ0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sInJlbWl0dGFuY2VJbmZvcm1hdGlvblVuc3RydWN0dXJlZCI6IlBsYXRiYSB6YSBrdXJpZXJhIiwiYWRkaXRpb25hbEluZm9ybWF0aW9uIjoiQ1NPICAgICAxMTAwLzAwMDAwMC03Mzg4MjQwNTM4IiwiYmFua1RyYW5zYWN0aW9uQ29kZSI6IlhUTkQtTlRBVi1OVEFWIiwiaXNSZXZlcnNhbCI6ZmFsc2V9LHsidHJhbnNhY3Rpb25JZCI6IjE3MzY3MjY0MDAxNTU4MiIsInRyYW5zYWN0aW9uU3RhdGUiOiJCT09LRUQiLCJlbmRUb0VuZElkIjoiL1ZTNDg5NzE1MDUyNy9TUzc3MTQ5NDAwNzcvS1MwNTU4IiwidmFyaWFibGVTeW1ib2wiOiI0ODk3MTUwNTI3IiwiYm9va2luZ0RhdGUiOiIyMDI1LTAxLTEzIiwidmFsdWVEYXRlIjoiMjAyNS0wMS0xMyIsInRyYW5zYWN0aW9uQW1vdW50Ijp7ImFtb3VudCI6MjYuMDksImN1cnJlbmN5IjoiRVVSIn0sImNyZWRpdG9yTmFtZSI6IlZlxL5rw6EgesOhc2llbGthIHMuci5vLiAtIDEiLCJjcmVkaXRvckFjY291bnQiOnsiaWJhbiI6IlNLMTkxMTAwMDAwMDAwMTkxMzg4ODYzNSJ9LCJjcmVkaXRvckFnZW50Ijp7ImJpYyI6IlRBVFJTS0JYWFhYIiwibmFtZSI6IiIsIm90aGVySWRlbnRpZmljYXRpb24iOiIifSwiZGVidG9yTmFtZSI6IkRvcHJhdm5hIHNwb2xvY25vc3QiLCJkZWJ0b3JBY2NvdW50Ijp7ImliYW4iOiJTSzY1MTEwMDAwMDAwMDQ2MjI5MjQ3NTkiLCJjdXJyZW5jeSI6IkVVUiJ9LCJkZWJ0b3JBZ2VudCI6eyJiaWMiOiJUQVRSU0tCWFhYWCIsIm5hbWUiOiIiLCJvdGhlcklkZW50aWZpY2F0aW9uIjoiIn0sInJlbWl0dGFuY2VJbmZvcm1hdGlvblVuc3RydWN0dXJlZCI6IlZlbGthIHphc2llbGthIHMuci5vLiIsImFkZGl0aW9uYWxJbmZvcm1hdGlvbiI6IkNTTyAgICAgMTEwMC8wMDAwMDAtNDYyMjkyNDc1OSIsImJhbmtUcmFuc2FjdGlvbkNvZGUiOiJYVE5ELU5UQVYtTlRBViIsImlzUmV2ZXJzYWwiOmZhbHNlfV19" />
+              <option name="bodyString" value="{&#10;  &quot;account&quot;: {&#10;    &quot;iban&quot;: &quot;SK1911000000001913888635&quot;,&#10;    &quot;currency&quot;: &quot;EUR&quot;&#10;  },&#10;  &quot;transactions&quot;: [&#10;    {&#10;      &quot;transactionId&quot;: &quot;173672640078540&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS4040396390/SS6311001588/KS0308&quot;,&#10;      &quot;variableSymbol&quot;: &quot;4040396390&quot;,&#10;      &quot;bookingDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;valueDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: 45,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Sandox provider 2&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK6811000000000876833496&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Uhrada fa 2025-01 039070&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-876833496&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173672640059106&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS4883631673/SS7779893542/KS008&quot;,&#10;      &quot;variableSymbol&quot;: &quot;4883631673&quot;,&#10;      &quot;bookingDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;valueDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: 35.28,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Corp X&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK5811000000007256890918&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Uhrada fa 2025-01 116086&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-7256890918&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173672640057386&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS9902809069/SS1898868405/KS008&quot;,&#10;      &quot;variableSymbol&quot;: &quot;9902809069&quot;,&#10;      &quot;bookingDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;valueDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: 37.69,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Dopravna spolocnost&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK1611000000007388240538&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Platba za kuriera&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-7388240538&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    },&#10;    {&#10;      &quot;transactionId&quot;: &quot;173672640015582&quot;,&#10;      &quot;transactionState&quot;: &quot;BOOKED&quot;,&#10;      &quot;endToEndId&quot;: &quot;/VS4897150527/SS7714940077/KS0558&quot;,&#10;      &quot;variableSymbol&quot;: &quot;4897150527&quot;,&#10;      &quot;bookingDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;valueDate&quot;: &quot;2025-01-13&quot;,&#10;      &quot;transactionAmount&quot;: {&#10;        &quot;amount&quot;: 26.09,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;creditorName&quot;: &quot;Veľká zásielka s.r.o. - 1&quot;,&#10;      &quot;creditorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK1911000000001913888635&quot;&#10;      },&#10;      &quot;creditorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;debtorName&quot;: &quot;Dopravna spolocnost&quot;,&#10;      &quot;debtorAccount&quot;: {&#10;        &quot;iban&quot;: &quot;SK6511000000004622924759&quot;,&#10;        &quot;currency&quot;: &quot;EUR&quot;&#10;      },&#10;      &quot;debtorAgent&quot;: {&#10;        &quot;bic&quot;: &quot;TATRSKBXXXX&quot;,&#10;        &quot;name&quot;: &quot;&quot;,&#10;        &quot;otherIdentification&quot;: &quot;&quot;&#10;      },&#10;      &quot;remittanceInformationUnstructured&quot;: &quot;Velka zasielka s.r.o.&quot;,&#10;      &quot;additionalInformation&quot;: &quot;CSO     1100/000000-4622924759&quot;,&#10;      &quot;bankTransactionCode&quot;: &quot;XTND-NTAV-NTAV&quot;,&#10;      &quot;isReversal&quot;: false&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="2" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 21:01:53 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="1c640335-1428-4c92-b969-eddbc66774db" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;account&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;transactions&quot;:[{&quot;transactionId&quot;:&quot;173672640078540&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS4040396390/SS6311001588/KS0308&quot;,&quot;variableSymbol&quot;:&quot;4040396390&quot;,&quot;bookingDate&quot;:&quot;2025-01-13&quot;,&quot;valueDate&quot;:&quot;2025-01-13&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:45,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Sandox provider 2&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK6811000000000876833496&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Uhrada fa 2025-01 039070&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-876833496&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173672640059106&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS4883631673/SS7779893542/KS008&quot;,&quot;variableSymbol&quot;:&quot;4883631673&quot;,&quot;bookingDate&quot;:&quot;2025-01-13&quot;,&quot;valueDate&quot;:&quot;2025-01-13&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:35.28,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Corp X&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK5811000000007256890918&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Uhrada fa 2025-01 116086&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-7256890918&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173672640057386&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS9902809069/SS1898868405/KS008&quot;,&quot;variableSymbol&quot;:&quot;9902809069&quot;,&quot;bookingDate&quot;:&quot;2025-01-13&quot;,&quot;valueDate&quot;:&quot;2025-01-13&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:37.69,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Dopravna spolocnost&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK1611000000007388240538&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Platba za kuriera&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-7388240538&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false},{&quot;transactionId&quot;:&quot;173672640015582&quot;,&quot;transactionState&quot;:&quot;BOOKED&quot;,&quot;endToEndId&quot;:&quot;/VS4897150527/SS7714940077/KS0558&quot;,&quot;variableSymbol&quot;:&quot;4897150527&quot;,&quot;bookingDate&quot;:&quot;2025-01-13&quot;,&quot;valueDate&quot;:&quot;2025-01-13&quot;,&quot;transactionAmount&quot;:{&quot;amount&quot;:26.09,&quot;currency&quot;:&quot;EUR&quot;},&quot;creditorName&quot;:&quot;Veľká zásielka s.r.o. - 1&quot;,&quot;creditorAccount&quot;:{&quot;iban&quot;:&quot;SK1911000000001913888635&quot;},&quot;creditorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;debtorName&quot;:&quot;Dopravna spolocnost&quot;,&quot;debtorAccount&quot;:{&quot;iban&quot;:&quot;SK6511000000004622924759&quot;,&quot;currency&quot;:&quot;EUR&quot;},&quot;debtorAgent&quot;:{&quot;bic&quot;:&quot;TATRSKBXXXX&quot;,&quot;name&quot;:&quot;&quot;,&quot;otherIdentification&quot;:&quot;&quot;},&quot;remittanceInformationUnstructured&quot;:&quot;Velka zasielka s.r.o.&quot;,&quot;additionalInformation&quot;:&quot;CSO     1100/000000-4622924759&quot;,&quot;bankTransactionCode&quot;:&quot;XTND-NTAV-NTAV&quot;,&quot;isReversal&quot;:false}]}" />
+              <option name="size" value="3150" />
+              <option name="time" value="109" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736802131480" />
+          <option name="id" value="07f4ceb3-e63b-4a07-a44c-9cd9cdd98ab4" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;amount&quot;: &quot;1&quot;,&#10;  &quot;currency&quot;: &quot;EUR&quot;,&#10;  &quot;debtorIban&quot;: &quot;SK1911000000001913888635&quot;,&#10;  &quot;creditorIban&quot;: &quot;SK4011000000004145138420&quot;,&#10;  &quot;creditorName&quot;: &quot;:3&quot;,&#10;  &quot;note&quot;: &quot;:3&quot;,&#10;  &quot;type&quot;: &quot;sepa-credit-transfers&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="ad6ab171-b834-45c2-bfef-b183e4468b6e" />
+              <option name="method" value="POST" />
+              <option name="name" value="Initialize Payment" />
+              <option name="sortWeight" value="4000000" />
+              <option name="url" value="{{URI}}/payments/init" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJwYXltZW50SWQiOiI2RjE1Nzc4OUY0Q0M0NDk2MENDRUQ0QjU5NTZEOEM5QiIsInRyYW5zYWN0aW9uU3RhdHVzIjoiQUNUQyIsInVybCI6Imh0dHBzOi8vYXBpLnRhdHJhYmFua2Euc2svcHJlbWl1bS9zYW5kYm94L2F1dGgvb2F1dGgvdjIvYXV0aG9yaXplP3Njb3BlPVBSRU1JVU1fUElTOmQ0ZGFjNzllLTRlMTYtNGJmNi05YTg4LTk4ZTdiMDZmYzU5NFx1MDAyNmNsaWVudF9pZD1sNzVlOWIwZDRlZWExOTQ2Mjk5N2JjODk0ZTY3NmU4ODE1XHUwMDI2cmVzcG9uc2VfdHlwZT1yZWRpciJ9" />
+              <option name="bodyString" value="{&#10;  &quot;paymentId&quot;: &quot;6F157789F4CC44960CCED4B5956D8C9B&quot;,&#10;  &quot;transactionStatus&quot;: &quot;ACTC&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?scope=PREMIUM_PIS:d4dac79e-4e16-4bf6-9a88-98e7b06fc594&amp;client_id=l75e9b0d4eea19462997bc894e676e8815&amp;response_type=redir&quot;&#10;}" />
               <option name="code" value="201" />
               <option name="connectionEstablishingTime" value="21" />
               <option name="contentType" value="application/json; charset=utf-8" />
@@ -2364,20 +2304,110 @@
                   </headerState>
                   <headerState>
                     <option name="key" value="Date" />
-                    <option name="value" value="Sat, 28 Dec 2024 10:05:24 GMT" />
+                    <option name="value" value="Mon, 13 Jan 2025 21:02:11 GMT" />
                   </headerState>
                   <headerState>
                     <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
+                    <option name="value" value="279" />
                   </headerState>
                 </list>
               </option>
-              <option name="id" value="e259d683-ee4b-40a2-8e52-3f36f507ce05" />
+              <option name="id" value="07f4ceb3-e63b-4a07-a44c-9cd9cdd98ab4" />
               <option name="message" value="Created" />
               <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2024-12-28T11:20:24+01:00&quot;,&quot;token&quot;:&quot;01940cba-500d-713e-bbe6-5b0ded590f39&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A75f0f796-b2e7-402b-8fed-e807233f34a3\u0026state=YcqUUATuUozQAWpU&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="635" />
+              <option name="rawBodyString" value="{&quot;paymentId&quot;:&quot;6F157789F4CC44960CCED4B5956D8C9B&quot;,&quot;transactionStatus&quot;:&quot;ACTC&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?scope=PREMIUM_PIS:d4dac79e-4e16-4bf6-9a88-98e7b06fc594\u0026client_id=l75e9b0d4eea19462997bc894e676e8815\u0026response_type=redir&quot;}" />
+              <option name="size" value="279" />
+              <option name="time" value="371" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736802158561" />
+          <option name="id" value="bfb28f9d-5dd9-4750-b719-360eb128ceb3" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="0fef4a8f-f6c2-4c4f-8ea9-c2c0df59fa8e" />
+              <option name="method" value="GET" />
+              <option name="name" value="Payment Status" />
+              <option name="sortWeight" value="5000000" />
+              <option name="url" value="{{URI}}/payments/status/6F157789F4CC44960CCED4B5956D8C9B" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6InBheW1lbnQgd2l0aCBJRCAnJyBub3QgZm91bmQiLCJ0cmFjZUlkIjoiNzg3YWI2NDBkMjZlOWMxOTlkODIyZGFiMTUxM2E3NjMifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;payment with ID '' not found&quot;,&#10;  &quot;traceId&quot;: &quot;787ab640d26e9c199d822dab1513a763&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 21:02:38 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="85" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="bfb28f9d-5dd9-4750-b719-360eb128ceb3" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;payment with ID '' not found&quot;,&quot;traceId&quot;:&quot;787ab640d26e9c199d822dab1513a763&quot;}" />
+              <option name="size" value="85" />
+              <option name="time" value="5" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736802208172" />
+          <option name="id" value="caf479e3-21ff-42aa-a3e5-23bbbad91ed1" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="0fef4a8f-f6c2-4c4f-8ea9-c2c0df59fa8e" />
+              <option name="method" value="GET" />
+              <option name="name" value="Payment Status" />
+              <option name="sortWeight" value="5000000" />
+              <option name="url" value="{{URI}}/payments/status/6F157789F4CC44960CCED4B5956D8C9B" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJhdXRob3JpemF0aW9uU3RhdHVzIjoiZmluYWxpc2VkIiwidHJhbnNhY3Rpb25TdGF0dXMiOiJBQ1NDIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;authorizationStatus&quot;: &quot;finalised&quot;,&#10;  &quot;transactionStatus&quot;: &quot;ACSC&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="5" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 13 Jan 2025 21:03:28 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="62" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="caf479e3-21ff-42aa-a3e5-23bbbad91ed1" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;authorizationStatus&quot;:&quot;finalised&quot;,&quot;transactionStatus&quot;:&quot;ACSC&quot;}" />
+              <option name="size" value="62" />
+              <option name="time" value="370" />
             </responseState>
           </option>
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />

@@ -85,7 +85,7 @@ type transactions struct {
 func listTransactions(rt *kernel.RequestRuntime, t *TransactionsModel) (*transactions, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("transactions.list").Advance()
+	rt.StepInto("transactions.list")
 
 	parsedUrl, _ := url.Parse(fmt.Sprintf("%s/v5/accounts/%s/transactions", art.TbUrl, t.AccountId))
 	q := parsedUrl.Query()
@@ -167,14 +167,14 @@ func listTransactions(rt *kernel.RequestRuntime, t *TransactionsModel) (*transac
 		return nil, rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 	rt.Span.SetAttributes(attribute.KeyValue("api.accounts", fmt.Sprintf("%+v", transactionLists.Transactions)))
-	rt.EndBlock()
+	rt.StepBack()
 
 	return transactionLists, nil
 }
 
 func Transactions(c *gin.Context) {
 	rt := c.MustGet("rt").(*kernel.RequestRuntime)
-	rt.NewChildTracer("transactions.handler").Advance()
+	rt.StepInto("transactions.handler")
 
 	assert.NotNil(rt.Token, "token != nil")
 
@@ -218,5 +218,5 @@ func Transactions(c *gin.Context) {
 	}
 
 	c.JSON(200, transactionList)
-	rt.EndBlock()
+	rt.StepBack()
 }

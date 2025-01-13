@@ -12,7 +12,7 @@ func TokenMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		rt := c.MustGet("rt").(*kernel.RequestRuntime)
 
-		rt.NewChildTracer("middleware.token").Advance()
+		rt.StepInto("middleware.token")
 
 		authHeader := c.GetHeader("X-Api-Key")
 		if authHeader == "" {
@@ -36,7 +36,7 @@ func TokenMiddleware() gin.HandlerFunc {
 
 		rt.Token = &token
 
-		rt.EndBlock()
+		rt.StepBack()
 		c.Next()
 	}
 }

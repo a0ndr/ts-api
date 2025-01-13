@@ -26,7 +26,7 @@
                     <option name="apiKey">
                       <apiKeyAuthState>
                         <option name="key" value="X-Api-Key" />
-                        <option name="value" value="01940a07-e910-777d-9c83-38b87cc7fea7" />
+                        <option name="value" value="01946178-7545-770e-a77b-5181628459e5" />
                       </apiKeyAuthState>
                     </option>
                     <option name="type" value="API_KEY" />
@@ -63,13 +63,18 @@
                       <option name="queryParams">
                         <list>
                           <queryParamState>
+                            <option name="disabled" value="true" />
                             <option name="key" value="iban" />
                             <option name="value" value="SK401100000000414513842" />
+                          </queryParamState>
+                          <queryParamState>
+                            <option name="key" value="accountId" />
+                            <option name="value" value="e0b533a1-7a5b-4411-8230-04e09d86ec06" />
                           </queryParamState>
                         </list>
                       </option>
                       <option name="sortWeight" value="3000000" />
-                      <option name="url" value="{{URI}}/transactions?iban=SK401100000000414513842" />
+                      <option name="url" value="{{URI}}/transactions?accountId=e0b533a1-7a5b-4411-8230-04e09d86ec06" />
                     </requestState>
                     <requestState>
                       <option name="body">
@@ -89,7 +94,7 @@
                       <option name="method" value="GET" />
                       <option name="name" value="Payment Status" />
                       <option name="sortWeight" value="5000000" />
-                      <option name="url" value="{{URI}}/payments/status/AF1E7A5472CED8EB83A1D36A06118880" />
+                      <option name="url" value="{{URI}}/payments/status/6F157789F4CC44960CCED4B5956D8C9B" />
                     </requestState>
                   </list>
                 </option>
@@ -124,6 +129,6 @@
       </list>
     </option>
     <option name="id" value="dc7bdc4f-f05d-430b-8d8f-dde041f84d70" />
-    <option name="version" value="5" />
+    <option name="version" value="6" />
   </component>
 </project>

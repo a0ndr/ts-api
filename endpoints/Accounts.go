@@ -49,7 +49,7 @@ type accounts struct {
 func listAccounts(rt *kernel.RequestRuntime) (*accounts, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("accounts.list").Advance()
+	rt.StepInto("accounts.list")
 
 	tbUrl := fmt.Sprintf("%s/v3/accounts?withBalance=true", art.TbUrl)
 
@@ -96,14 +96,14 @@ func listAccounts(rt *kernel.RequestRuntime) (*accounts, error) {
 	}
 
 	rt.Span.SetAttributes(attribute.KeyValue("api.accounts", fmt.Sprintf("%+v", accountLists.Accounts)))
-	rt.EndBlock()
+	rt.StepBack()
 
 	return accountLists, nil
 }
 
 func Accounts(c *gin.Context) {
 	rt := c.MustGet("rt").(*kernel.RequestRuntime)
-	rt.NewChildTracer("accounts.handler").Advance()
+	rt.StepInto("accounts.handler")
 
 	assert.NotNil(rt.Token, "token != nil")
 
@@ -119,5 +119,5 @@ func Accounts(c *gin.Context) {
 	}
 
 	c.JSON(200, accountList)
-	rt.EndBlock()
+	rt.StepBack()
 }

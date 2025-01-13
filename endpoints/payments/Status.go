@@ -17,7 +17,7 @@ import (
 func CheckPaymentAuthorization(rt *kernel.RequestRuntime, pmt *models.Payment) (string, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("payment_status.authorization").Advance()
+	rt.StepInto("payment_status.authorization")
 
 	tbUrl := fmt.Sprintf("%s/v1/payments/%s/%s/authorizations/%s",
 		art.TbUrl, pmt.Type,
@@ -52,14 +52,14 @@ func CheckPaymentAuthorization(rt *kernel.RequestRuntime, pmt *models.Payment) (
 		return "", rt.MakeErrorf("could not unmarshal body: %v", err)
 	}
 
-	rt.EndBlock()
+	rt.StepBack()
 	return res["scaStatus"].(string), nil
 }
 
 func CheckPaymentStatus(rt *kernel.RequestRuntime, pmt *models.Payment) (string, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("payment_status.status").Advance()
+	rt.StepInto("payment_status.status")
 
 	tbUrl := fmt.Sprintf("%s/v3/payments/%s/%s/status",
 		art.TbUrl, pmt.Type,
@@ -93,13 +93,13 @@ func CheckPaymentStatus(rt *kernel.RequestRuntime, pmt *models.Payment) (string,
 		return "", rt.MakeErrorf("could not unmarshal body: %v", err)
 	}
 
-	rt.EndBlock()
+	rt.StepBack()
 	return res["transactionStatus"].(string), nil
 }
 
 func PaymentStatus(c *gin.Context) {
 	rt := c.MustGet("rt").(*kernel.RequestRuntime)
-	rt.NewChildTracer("payment_status.handler").Advance()
+	rt.StepInto("payment_status.handler")
 
 	assert.NotNil(rt.Token, "token != nil")
 
@@ -135,5 +135,5 @@ func PaymentStatus(c *gin.Context) {
 		"authorizationStatus": authStatus,
 		"transactionStatus":   transStatus,
 	})
-	rt.EndBlock()
+	rt.StepBack()
 }

@@ -16,7 +16,7 @@ func (rt *RequestRuntime) MakeError(err error) error {
 	s.SetStatus(codes.Error, err.Error())
 	s.End()
 	rt.Error = err
-	rt.EndBlock()
+	rt.StepBack()
 
 	return err
 }
@@ -44,7 +44,7 @@ func (rt *RequestRuntime) MakeErrorfFromHttp(rsp *http.Response, format string, 
 func (rt *RequestRuntime) RecordSpanStack() {
 	if rt.Error == nil {
 		oldIndex := rt.current
-		rt.SkipOverTo(0)
+		rt.SkipBackTo(0)
 
 		// this is running in the main span
 		for index, pair := range rt.pairs {
@@ -52,7 +52,7 @@ func (rt *RequestRuntime) RecordSpanStack() {
 		}
 		rt.Span.SetAttributes(attribute.KeyValue("span_stack.current", rt.current))
 
-		rt.SkipOverTo(oldIndex)
+		rt.SkipBackTo(oldIndex)
 	}
 }
 

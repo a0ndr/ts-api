@@ -8,5 +8,5 @@ func RegisterController(rg *gin.RouterGroup) {
 	g := rg.Group("/payments")
 
 	g.POST("/init", InitializePayment)
-	g.GET("/status/:id", PaymentStatus)
+	g.GET("/status/:paymentId", PaymentStatus)
 }

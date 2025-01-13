@@ -31,7 +31,7 @@ func (dto AuthorizeDto) Validate() error {
 
 func getClientCredentialsGrantToken(rt *kernel.RequestRuntime) (string, error) {
 	art := rt.AppRuntime
-	rt.NewChildTracer("authorize.grant_token").Advance()
+	rt.StepInto("authorize.grant_token")
 
 	data := url.Values{}
 	data.Set("client_id", art.ClientID)
@@ -74,14 +74,14 @@ func getClientCredentialsGrantToken(rt *kernel.RequestRuntime) (string, error) {
 		return "", rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
-	rt.EndBlock()
+	rt.StepBack()
 	return res["access_token"].(string), nil
 }
 
 func getConsentId(rt *kernel.RequestRuntime, grantToken string) (string, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("authorize.consent_id").Advance()
+	rt.StepInto("authorize.consent_id")
 
 	tbUrl := fmt.Sprintf("%s/v3/consents", art.TbUrl)
 
@@ -135,14 +135,14 @@ func getConsentId(rt *kernel.RequestRuntime, grantToken string) (string, error) 
 		return "", rt.MakeErrorf("failed to unmarshal response body: %v", err)
 	}
 
-	rt.EndBlock()
+	rt.StepBack()
 	return res["consentId"].(string), nil
 }
 
 func createAuthUrl(rt *kernel.RequestRuntime, consentId string, state string) (string, error) {
 	art := rt.AppRuntime
 
-	rt.NewChildTracer("authorize.create_auth_url").Advance()
+	rt.StepInto("authorize.create_auth_url")
 
 	parsedUrl, err := url.Parse(fmt.Sprintf("%s/auth/oauth/v2/authorize", art.TbUrl))
 	if err != nil {
@@ -162,14 +162,14 @@ func createAuthUrl(rt *kernel.RequestRuntime, consentId string, state string) (s
 	finalUrl := parsedUrl.String()
 
 	rt.Span.SetAttributes(attribute.KeyValue("tb.auth_url", finalUrl))
-	rt.EndBlock()
+	rt.StepBack()
 
 	return finalUrl, nil
 }
 
 func Authorize(c *gin.Context) {
 	rt := c.MustGet("rt").(*kernel.RequestRuntime)
-	rt.NewChildTracer("authorize.handler").Advance()
+	rt.StepInto("authorize.handler")
 
 	var dto AuthorizeDto
 	rt.BindJSON(&dto)
@@ -249,5 +249,5 @@ func Authorize(c *gin.Context) {
 		"url":       authUrl,
 		"expiresAt": t.Format(time.RFC3339),
 	})
-	rt.EndBlock()
+	rt.StepBackWithMessage("end handler func")
 }
