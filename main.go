@@ -8,7 +8,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"log"
 	"net/http"
+	"time"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 
@@ -52,6 +54,17 @@ func main() {
 			c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{
 				"error": "a panic occurred, request aborted",
 			})
+		}))
+		r.Use(cors.New(cors.Config{
+			AllowOrigins:     []string{"https://api.tadam.space"},
+			AllowMethods:     []string{"POST"},
+			AllowHeaders:     []string{"Origin"},
+			ExposeHeaders:    []string{"Content-Length"},
+			AllowCredentials: true,
+			AllowOriginFunc: func(origin string) bool {
+				return origin == "https://portal.ondrejcak.sk"
+			},
+			MaxAge: 12 * time.Hour,
 		}))
 	}
 
