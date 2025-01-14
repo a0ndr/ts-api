@@ -27,6 +27,12 @@ services:
       - MARIADB_ROOT_PASSWORD=7GAZBKYvO9T0NxHzGJPwCgI8w7E9po2vh3MEt3703d6yH1qB0bImCi2WEIzFCiSck7GN4aVgFBlEibx9sPgQfpItRgJ7OA6niEo9ygA6I5Br9UnD7NAHeR1rDuQOoq06
     networks:
       - ts
+    healthcheck:
+      test: [ "CMD", "healthcheck.sh", "--connect", "--innodb_initialized" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
 #  pma:
 #    image: phpmyadmin
 #    environment:
@@ -89,3 +95,4 @@ volumes:
 networks:
   ts:
     name: ts
+    driver: bridge
