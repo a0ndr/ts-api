@@ -21,7 +21,7 @@ services:
     networks:
       - ts
     ports:
-      - "9918:3000"
+      - "9918:80"
 
   db:
     image: mariadb:10.11.7
