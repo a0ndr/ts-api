@@ -33,14 +33,14 @@ services:
       timeout: 5s
       retries: 3
 
-#  pma:
-#    image: phpmyadmin
-#    environment:
-#      - PMA_HOST=db
-#    ports:
-#      - "8082:80"
-#    depends_on:
-#      - db
+  pma:
+    image: phpmyadmin
+    environment:
+      - PMA_HOST=db
+    ports:
+      - "9919:80"
+    depends_on:
+      - db
 
 #  grafana:
 #    image: grafana/grafana:latest
