@@ -83,7 +83,7 @@ func LoadConfig() *AppRuntime {
 		}
 
 		appRuntime = &AppRuntime{
-			Host:        e.get("HOST"),
+			Host:        e.get("API_HOST"),
 			DatabaseDSN: e.get("DATABASE_DSN"),
 
 			ServiceName:           e.get("SERVICE_NAME"),
