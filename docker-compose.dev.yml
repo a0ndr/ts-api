@@ -8,6 +8,7 @@ services:
       - MARIADB_DATABASE=api
     ports:
       - "8081:3306"
+
   pma:
     image: phpmyadmin
     environment:

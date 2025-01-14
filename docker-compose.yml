@@ -9,7 +9,7 @@ services:
       - prometheus
       - jaeger
     ports:
-      - "8080:8080"
+      - "9917:9917"
     environment:
       - API_ENV=production
     env_file:
@@ -63,7 +63,7 @@ services:
     restart: always
     command: ["--config", "/etc/jaeger/config.yml"]
     ports:
-      - "8085:16686"  # Jaeger UI
+      - "9918:16686"  # Jaeger UI
 #      - "8086:14268"  # Jaeger OTLP endpoint
 #      - "8087:4317"    # OTLP gRPC traces
 #      - "8088:4318"    # OTLP HTTP traces
