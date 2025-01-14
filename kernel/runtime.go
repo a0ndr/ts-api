@@ -32,6 +32,12 @@ type RequestRuntime struct {
 	current uint8
 }
 
+func (rt *RequestRuntime) logf(format string, args ...interface{}) {
+	if rt.AppRuntime.Debug {
+		log.Printf(format, args...)
+	}
+}
+
 func InitRequest(art *AppRuntime, rctx *gin.Context) *RequestRuntime {
 	ctx := rctx.Request.Context()
 	span, ctx := art.Diagnostic.BeginTracing(ctx, rctx.FullPath())
@@ -58,7 +64,7 @@ func InitRequest(art *AppRuntime, rctx *gin.Context) *RequestRuntime {
 func (rt *RequestRuntime) StepInto(spanName string) {
 	ctx, span := rt.AppRuntime.Diagnostic.Tracer.Start(rt.SpanContext, spanName)
 	rt.pairs = append(rt.pairs, &StepData{span: span, ctx: ctx, name: spanName})
-	log.Printf("%s-> Stepping into %d [%s] -> %d [%s]", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name, rt.current+1, spanName)
+	rt.logf("%s-> Stepping into %d [%s] -> %d [%s]", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name, rt.current+1, spanName)
 	rt.current = rt.current + 1
 	pair := rt.pairs[rt.current]
 	rt.Span = pair.span
@@ -66,9 +72,9 @@ func (rt *RequestRuntime) StepInto(spanName string) {
 }
 
 func (rt *RequestRuntime) StepBack() {
-	log.Printf("%s<- Stepping back %d [%s] -> %d [%s]", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name, rt.current-1, rt.pairs[rt.current-1].name)
+	rt.logf("%s<- Stepping back %d [%s] -> %d [%s]", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name, rt.current-1, rt.pairs[rt.current-1].name)
 	if rt.current-1 < 0 {
-		log.Printf("  ! Can't step back from %d.", rt.current)
+		rt.logf("  ! Can't step back from %d.", rt.current)
 		return
 	}
 	rt.End()
@@ -80,9 +86,9 @@ func (rt *RequestRuntime) StepBack() {
 }
 
 func (rt *RequestRuntime) StepBackWithMessage(msg string) {
-	log.Printf("%s<- Stepping back %d [%s] -> %d [%s] - %s", strings.Repeat("| ", int(rt.current-1)), rt.current, rt.pairs[rt.current].name, rt.current-1, rt.pairs[rt.current-1].name, msg)
+	rt.logf("%s<- Stepping back %d [%s] -> %d [%s] - %s", strings.Repeat("| ", int(rt.current-1)), rt.current, rt.pairs[rt.current].name, rt.current-1, rt.pairs[rt.current-1].name, msg)
 	if rt.current-1 < 0 {
-		log.Printf("%s ! Can't step back from %d", strings.Repeat("| ", int(rt.current)), rt.current)
+		rt.logf("%s ! Can't step back from %d", strings.Repeat("| ", int(rt.current)), rt.current)
 		return
 	}
 	rt.EndMessage(msg)
@@ -94,28 +100,28 @@ func (rt *RequestRuntime) StepBackWithMessage(msg string) {
 }
 
 func (rt *RequestRuntime) SkipBackTo(index uint8) {
-	log.Printf("%s<> Skipping back to %d", strings.Repeat("| ", int(rt.current)), index)
+	rt.logf("%s<> Skipping back to %d", strings.Repeat("| ", int(rt.current)), index)
 	for ; rt.current > index; rt.current-- {
 		rt.StepBack()
 	}
 }
 
 func (rt *RequestRuntime) End() {
-	log.Printf("%s * Ending %d [%s]", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name)
+	rt.logf("%s * Ending %d [%s]", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name)
 	if rt.Span.IsRecording() {
 		rt.Span.End()
 	}
 }
 
 func (rt *RequestRuntime) EndMessage(msg string) {
-	log.Printf("%s * Ending %d [%s] - %s", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name, msg)
+	rt.logf("%s * Ending %d [%s] - %s", strings.Repeat("| ", int(rt.current)), rt.current, rt.pairs[rt.current].name, msg)
 	if rt.Span.IsRecording() {
 		rt.Span.End()
 	}
 }
 
 func (rt *RequestRuntime) SetIndex(index uint8) {
-	log.Printf("%s * Setting index %d", strings.Repeat("| ", int(index)), rt.current)
+	rt.logf("%s * Setting index %d", strings.Repeat("| ", int(index)), rt.current)
 	rt.current = index
 	pair := rt.pairs[rt.current]
 	rt.Span = pair.span

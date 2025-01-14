@@ -2,6 +2,7 @@ package kernel
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"github.com/appleboy/gin-jwt/v2"
 	"github.com/joho/godotenv"
@@ -23,6 +24,7 @@ type AppRuntime struct {
 
 	ServiceName           string
 	ServiceVersion        string
+	Debug                 bool
 	DeploymentEnvironment string
 
 	DatabaseDSN    string
@@ -51,6 +53,16 @@ type AppRuntime struct {
 	JWT         *jwt.GinJWTMiddleware
 }
 
+type appEnvArray map[string]string
+
+func (env *appEnvArray) get(key string) string {
+	if val, ok := (*env)[key]; ok {
+		return val
+	} else {
+		return os.Getenv(key)
+	}
+}
+
 func LoadConfig() *AppRuntime {
 	once.Do(func() {
 		appEnv := os.Getenv("API_ENV")
@@ -58,48 +70,58 @@ func LoadConfig() *AppRuntime {
 			appEnv = "development"
 		}
 
-		var env map[string]string
-		env, err := godotenv.Read(".env." + appEnv)
-		if err != nil {
-			log.Fatal(err)
+		var e *appEnvArray
+
+		if _, err := os.Stat("./.env." + appEnv); !errors.Is(err, os.ErrNotExist) {
+			env, err := godotenv.Read(".env." + appEnv)
+			e = (*appEnvArray)(&env)
+			if err != nil {
+				log.Fatal(err)
+			}
+		} else {
+			e = &appEnvArray{}
 		}
 
 		appRuntime = &AppRuntime{
-			Host:        env["HOST"],
-			DatabaseDSN: env["DATABASE_DSN"],
+			Host:        e.get("HOST"),
+			DatabaseDSN: e.get("DATABASE_DSN"),
 
-			ServiceName:           env["SERVICE_NAME"],
-			ServiceVersion:        env["SERVICE_VERSION"],
-			DeploymentEnvironment: env["DEPLOY_ENV"],
+			ServiceName:           e.get("SERVICE_NAME"),
+			ServiceVersion:        e.get("SERVICE_VERSION"),
+			Debug:                 e.get("DEBUG") == "true",
+			DeploymentEnvironment: appEnv,
 
-			JaegerEndpoint:     env["JAEGER_ENDPOINT"],
-			PrometheusEndpoint: env["PROMETHEUS_ENDPOINT"],
-			Insecure:           env["INSECURE"] == "true",
+			JaegerEndpoint:     e.get("JAEGER_ENDPOINT"),
+			PrometheusEndpoint: e.get("PROMETHEUS_ENDPOINT"),
+			Insecure:           e.get("INSECURE") == "true",
 
-			ClientID:              env["TB_API_CLIENT_ID"],
-			ClientSecret:          env["TB_API_CLIENT_SECRET"],
-			TbEnv:                 env["TB_API_ENV"],
-			TbUrl:                 fmt.Sprintf("https://api.tatrabanka.sk/premium/%s", env["TB_API_ENV"]),
-			RedirectUri:           env["TB_REDIRECT_URI"],
-			CodeChallenge:         env["TB_CODE_CHALLENGE"],
-			CodeChallengeVerifier: env["TB_CODE_CHALLENGE_VERIFIER"],
+			ClientID:              e.get("TB_API_CLIENT_ID"),
+			ClientSecret:          e.get("TB_API_CLIENT_SECRET"),
+			TbEnv:                 e.get("TB_API_ENV"),
+			TbUrl:                 fmt.Sprintf("https://api.tatrabanka.sk/premium/%s", e.get("TB_API_ENV")),
+			RedirectUri:           e.get("TB_REDIRECT_URI"),
+			CodeChallenge:         e.get("TB_CODE_CHALLENGE"),
+			CodeChallengeVerifier: e.get("TB_CODE_CHALLENGE_VERIFIER"),
 
 			Diagnostic: &AppDiagnostic{
-				Tracer: otel.Tracer(env["SERVICE_NAME"] + "-tracer"),
-				Meter:  otel.Meter(env["SERVICE_NAME"] + "-meter"),
+				Tracer: otel.Tracer(e.get("SERVICE_NAME") + "-tracer"),
+				Meter:  otel.Meter(e.get("SERVICE_NAME") + "-meter"),
 			},
 
-			Realm:       env["SEC_JWT_REALM"],
-			IdentityKey: env["SEC_JWT_IDENTITY_KEY"],
-			SecretKey:   []byte(env["SEC_JWT_SECRET_KEY"]),
+			Realm:       e.get("SEC_JWT_REALM"),
+			IdentityKey: e.get("SEC_JWT_IDENTITY_KEY"),
+			SecretKey:   []byte(e.get("SEC_JWT_SECRET_KEY")),
 		}
 
-		appRuntime.JWT, err = jwt.New(&jwt.GinJWTMiddleware{
+		jwt_, err := jwt.New(&jwt.GinJWTMiddleware{
 			Realm:       appRuntime.Realm,
 			Key:         appRuntime.SecretKey,
 			IdentityKey: appRuntime.IdentityKey,
 			Timeout:     time.Hour * 24 * 14, // 2 weeks
 		})
+		if err != nil {
+		}
+		appRuntime.JWT = jwt_
 	})
 	return appRuntime
 }

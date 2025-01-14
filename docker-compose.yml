@@ -1,0 +1,91 @@
+services:
+  app:
+    build: .
+    restart: always
+    networks:
+      - ts
+    depends_on:
+      - db
+      - prometheus
+      - jaeger
+    ports:
+      - "8080:8080"
+    environment:
+      - API_ENV=production
+    env_file:
+      - .env
+
+  db:
+    image: mariadb:10.11.7
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MARIADB_USER=tsapi
+      - MARIADB_PASSWORD=paxoDhzocRnVGLbDJk2xtpp2Mr9trz38ILrfFoszORQRi1FOtFOyKAY4XhcdedQPutnwA4ZaQCH6Ae0yKpcR2DeJvsUXHvOR6v8bT1DO6KRwgHVRcnEbvAtMQfEPuedv
+      - MARIADB_DATABASE=tsapi
+      - MARIADB_ROOT_PASSWORD=7GAZBKYvO9T0NxHzGJPwCgI8w7E9po2vh3MEt3703d6yH1qB0bImCi2WEIzFCiSck7GN4aVgFBlEibx9sPgQfpItRgJ7OA6niEo9ygA6I5Br9UnD7NAHeR1rDuQOoq06
+    networks:
+      - ts
+#  pma:
+#    image: phpmyadmin
+#    environment:
+#      - PMA_HOST=db
+#    ports:
+#      - "8082:80"
+#    depends_on:
+#      - db
+
+#  grafana:
+#    image: grafana/grafana:latest
+#    ports:
+#      - "8083:3000"
+#    environment:
+#      - GF_SECURITY_ADMIN_USER=admin
+#      - GF_SECURITY_ADMIN_PASSWORD=admin
+#    volumes:
+#      - grafana-data:/var/lib/grafana
+#    networks:
+#      - ts
+
+  prometheus:
+    image: prom/prometheus:latest
+    restart: always
+#    ports:
+#      - "8084:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - ts
+
+  jaeger:
+    image: jaegertracing/jaeger:latest
+    restart: always
+    command: ["--config", "/etc/jaeger/config.yml"]
+    ports:
+      - "8085:16686"  # Jaeger UI
+#      - "8086:14268"  # Jaeger OTLP endpoint
+#      - "8087:4317"    # OTLP gRPC traces
+#      - "8088:4318"    # OTLP HTTP traces
+#      - "8089:8888"
+#      - "8090:8889"
+    environment:
+      - METRICS_STORAGE_TYPE=prometheus
+      - PROMETHEUS_SERVER_URL=http://prometheus:9090
+      - PROMETHEUS_QUERY_NAMESPACE=${PROMETHEUS_QUERY_NAMESPACE:-}
+      - PROMETHEUS_QUERY_DURATION_UNIT=${PROMETHEUS_QUERY_DURATION_UNIT:-}
+      - PROMETHEUS_QUERY_NORMALIZE_CALLS=true
+      - PROMETHEUS_QUERY_NORMALIZE_DURATION=true
+    volumes:
+      - ./jaeger.yml:/etc/jaeger/config.yml
+    networks:
+      - ts
+
+volumes:
+    db_data:
+    grafana-data:
+    tempo-data:
+
+networks:
+  ts:
+    name: ts

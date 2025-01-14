@@ -20,6 +20,11 @@ func main() {
 	art := kernel.LoadConfig()
 	art.Context = context.Background()
 
+	if art.DeploymentEnvironment == "production" {
+		log.Printf(" === RUNNING IN PRODUCTION MODE ===")
+		gin.SetMode(gin.ReleaseMode)
+	}
+
 	cleanupFunc, err := art.SetupOtel()
 	if err != nil {
 		log.Fatal(err)
@@ -39,6 +44,15 @@ func main() {
 	if err != nil {
 		span.RecordError(err)
 		log.Fatal(err)
+	}
+
+	if art.DeploymentEnvironment == "production" {
+		r.Use(gin.Logger())
+		r.Use(gin.CustomRecovery(func(c *gin.Context, recovered interface{}) {
+			c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{
+				"error": "an panic occurred, request aborted",
+			})
+		}))
 	}
 
 	r.Use(otelgin.Middleware(art.ServiceName))

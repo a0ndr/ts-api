@@ -1659,210 +1659,6 @@
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
         </requestHistoryState>
         <requestHistoryState>
-          <option name="dateTime" value="1736800320901" />
-          <option name="id" value="c3327606-efc7-4d4e-86ed-a5d632cea7bb" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjQ3OjAwKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE1ZC1iZDgwLTcyOWQtYjZhOS04MTU0MjYwZTY2NTYiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNTljMDg4NDQtNzdjMS00MTliLTkwODYtNGZlOTg4M2Q3MzRiXHUwMDI2c3RhdGU9WHJUWFRYRGhqdGVVSVNyQiJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:47:00+01:00&quot;,&#10;  &quot;token&quot;: &quot;0194615d-bd80-729d-b6a9-8154260e6656&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A59c08844-77c1-419b-9086-4fe9883d734b&amp;state=XrTXTXDhjteUISrB&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="3" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Jan 2025 20:32:00 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="c3327606-efc7-4d4e-86ed-a5d632cea7bb" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:47:00+01:00&quot;,&quot;token&quot;:&quot;0194615d-bd80-729d-b6a9-8154260e6656&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A59c08844-77c1-419b-9086-4fe9883d734b\u0026state=XrTXTXDhjteUISrB&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="415" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1736800353470" />
-          <option name="id" value="101acd5a-c6fd-403c-837c-5710da919ffa" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjQ3OjMzKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE1ZS0zY2E2LTdiMDYtYWJiYi03YjRhYzY1MWMyNTIiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNWFkZjQ1OGYtODg5Yy00YjQ0LTkyMTgtNTY2YjkxYzZlYzU4XHUwMDI2c3RhdGU9Y3N0aG5WU2dDZkl2VEdCRCJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:47:33+01:00&quot;,&#10;  &quot;token&quot;: &quot;0194615e-3ca6-7b06-abbb-7b4ac651c252&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A5adf458f-889c-4b44-9218-566b91c6ec58&amp;state=csthnVSgCfIvTGBD&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="2" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Jan 2025 20:32:33 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="101acd5a-c6fd-403c-837c-5710da919ffa" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:47:33+01:00&quot;,&quot;token&quot;:&quot;0194615e-3ca6-7b06-abbb-7b4ac651c252&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A5adf458f-889c-4b44-9218-566b91c6ec58\u0026state=csthnVSgCfIvTGBD&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="432" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1736800490262" />
-          <option name="id" value="c30a628b-3f06-4d32-9ac2-45db0d22b7dd" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjQ5OjUwKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE2MC01MzBmLTc3YmMtOTdlZS1kYmYyNjlkMmVjNTciLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBODJmOWY3YTItMzg1MS00MDVhLWFjZWQtOGFhZGNjZjdjMzgxXHUwMDI2c3RhdGU9VVRDZEpldEtUZXphWWhaWCJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:49:50+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946160-530f-77bc-97ee-dbf269d2ec57&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A82f9f7a2-3851-405a-aced-8aadccf7c381&amp;state=UTCdJetKTezaYhZX&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="1" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Jan 2025 20:34:50 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="c30a628b-3f06-4d32-9ac2-45db0d22b7dd" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:49:50+01:00&quot;,&quot;token&quot;:&quot;01946160-530f-77bc-97ee-dbf269d2ec57&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A82f9f7a2-3851-405a-aced-8aadccf7c381\u0026state=UTCdJetKTezaYhZX&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="430" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
-          <option name="dateTime" value="1736800602282" />
-          <option name="id" value="2e32dd41-9022-4b29-b46f-38952efe4a69" />
-          <option name="request">
-            <requestState>
-              <option name="body">
-                <bodyState>
-                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
-                  <option name="type" value="JSON" />
-                </bodyState>
-              </option>
-              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
-              <option name="method" value="POST" />
-              <option name="name" value="Authorize" />
-              <option name="sortWeight" value="1000000" />
-              <option name="url" value="{{URI}}/authorize" />
-            </requestState>
-          </option>
-          <option name="response">
-            <responseState>
-              <option name="bodyBytesBase64" value="eyJleHBpcmVzQXQiOiIyMDI1LTAxLTEzVDIxOjUxOjQyKzAxOjAwIiwidG9rZW4iOiIwMTk0NjE2Mi0wODllLTdjMjEtOGM5Yi1hNTgyZGM0NTIzYmIiLCJ1cmwiOiJodHRwczovL2FwaS50YXRyYWJhbmthLnNrL3ByZW1pdW0vc2FuZGJveC9hdXRoL29hdXRoL3YyL2F1dGhvcml6ZT9jbGllbnRfaWQ9bDc1ZTliMGQ0ZWVhMTk0NjI5OTdiYzg5NGU2NzZlODgxNVx1MDAyNmNvZGVfY2hhbGxlbmdlPTFwckVLazBuUTFaSVhKZlZkamxoVmNEbk5qVDIwOEhreWp3b2lJSHBOWWNcdTAwMjZjb2RlX2NoYWxsZW5nZV9tZXRob2Q9UzI1Nlx1MDAyNnJlZGlyZWN0X3VyaT1odHRwJTNBJTJGJTJGbG9jYWxob3N0JTNBNDE3M1x1MDAyNnJlc3BvbnNlX3R5cGU9Y29kZVx1MDAyNnNjb3BlPVBSRU1JVU1fQUlTJTNBNjJlZGRmNmItMDMzNC00ZTBiLTg5NDItM2E2OTNlMWFjMGE2XHUwMDI2c3RhdGU9dVZteWRVd0VXYnhXTlpPdCJ9" />
-              <option name="bodyString" value="{&#10;  &quot;expiresAt&quot;: &quot;2025-01-13T21:51:42+01:00&quot;,&#10;  &quot;token&quot;: &quot;01946162-089e-7c21-8c9b-a582dc4523bb&quot;,&#10;  &quot;url&quot;: &quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815&amp;code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc&amp;code_challenge_method=S256&amp;redirect_uri=http%3A%2F%2Flocalhost%3A4173&amp;response_type=code&amp;scope=PREMIUM_AIS%3A62eddf6b-0334-4e0b-8942-3a693e1ac0a6&amp;state=uVmydUwEWbxWNZOt&quot;&#10;}" />
-              <option name="code" value="201" />
-              <option name="connectionEstablishingTime" value="3" />
-              <option name="contentType" value="application/json; charset=utf-8" />
-              <option name="headers">
-                <list>
-                  <headerState>
-                    <option name="key" value="Content-Type" />
-                    <option name="value" value="application/json; charset=utf-8" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Date" />
-                    <option name="value" value="Mon, 13 Jan 2025 20:36:42 GMT" />
-                  </headerState>
-                  <headerState>
-                    <option name="key" value="Content-Length" />
-                    <option name="value" value="465" />
-                  </headerState>
-                </list>
-              </option>
-              <option name="id" value="2e32dd41-9022-4b29-b46f-38952efe4a69" />
-              <option name="message" value="Created" />
-              <option name="prettyResponseType" value="JSON" />
-              <option name="rawBodyString" value="{&quot;expiresAt&quot;:&quot;2025-01-13T21:51:42+01:00&quot;,&quot;token&quot;:&quot;01946162-089e-7c21-8c9b-a582dc4523bb&quot;,&quot;url&quot;:&quot;https://api.tatrabanka.sk/premium/sandbox/auth/oauth/v2/authorize?client_id=l75e9b0d4eea19462997bc894e676e8815\u0026code_challenge=1prEKk0nQ1ZIXJfVdjlhVcDnNjT208HkyjwoiIHpNYc\u0026code_challenge_method=S256\u0026redirect_uri=http%3A%2F%2Flocalhost%3A4173\u0026response_type=code\u0026scope=PREMIUM_AIS%3A62eddf6b-0334-4e0b-8942-3a693e1ac0a6\u0026state=uVmydUwEWbxWNZOt&quot;}" />
-              <option name="size" value="465" />
-              <option name="time" value="371" />
-            </responseState>
-          </option>
-          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
-        </requestHistoryState>
-        <requestHistoryState>
           <option name="dateTime" value="1736801526722" />
           <option name="id" value="b3652431-7d08-47f1-93b4-150a4d5f0119" />
           <option name="request">
@@ -2408,6 +2204,201 @@
               <option name="rawBodyString" value="{&quot;authorizationStatus&quot;:&quot;finalised&quot;,&quot;transactionStatus&quot;:&quot;ACSC&quot;}" />
               <option name="size" value="62" />
               <option name="time" value="370" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736873906784" />
+          <option name="id" value="db9424ff-2a31-4997-bc6b-616a5623c87e" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImNvbXBhbnkgd2l0aCBJRCAnNzg3MTEzMjgnIGRvZXMgbm90IGV4aXN0IiwidHJhY2VJZCI6IjI5MDljZTY0ZmNlMWI5OThmOTI5ODFmZWJlMTM0NDkxIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;company with ID '78711328' does not exist&quot;,&#10;  &quot;traceId&quot;: &quot;2909ce64fce1b998f92981febe134491&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="98" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 14 Jan 2025 16:58:26 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="98" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="db9424ff-2a31-4997-bc6b-616a5623c87e" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;company with ID '78711328' does not exist&quot;,&quot;traceId&quot;:&quot;2909ce64fce1b998f92981febe134491&quot;}" />
+              <option name="size" value="98" />
+              <option name="time" value="108" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736874095554" />
+          <option name="id" value="b2b2c9f5-6a36-4bbb-83db-29c692ed9a02" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImNvbXBhbnkgd2l0aCBJRCAnNzg3MTEzMjgnIGRvZXMgbm90IGV4aXN0IiwidHJhY2VJZCI6IjQwNDlhZDE4NDJkYWY3YjI5MTRiMTIzMTJkYTIzZjNmIn0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;company with ID '78711328' does not exist&quot;,&#10;  &quot;traceId&quot;: &quot;4049ad1842daf7b2914b12312da23f3f&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 14 Jan 2025 17:01:35 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="98" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b2b2c9f5-6a36-4bbb-83db-29c692ed9a02" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;company with ID '78711328' does not exist&quot;,&quot;traceId&quot;:&quot;4049ad1842daf7b2914b12312da23f3f&quot;}" />
+              <option name="size" value="98" />
+              <option name="time" value="7" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736874159808" />
+          <option name="id" value="501552fb-4cbc-4b86-9cbb-c509967b1b21" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="code" value="500" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/octet-stream" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 14 Jan 2025 17:02:39 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="0" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="501552fb-4cbc-4b86-9cbb-c509967b1b21" />
+              <option name="message" value="Internal Server Error" />
+              <option name="time" value="5" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1736874240353" />
+          <option name="id" value="b533b1cd-420e-4d5d-88b8-388b69c9346f" />
+          <option name="request">
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;companyId&quot;: &quot;{{companyId}}&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="9eeacc15-7d1a-4ada-9188-5f74a870ed7a" />
+              <option name="method" value="POST" />
+              <option name="name" value="Authorize" />
+              <option name="sortWeight" value="1000000" />
+              <option name="url" value="{{URI}}/authorize" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJlcnJvciI6ImNvbXBhbnkgd2l0aCBJRCAnNzg3MTEzMjgnIGRvZXMgbm90IGV4aXN0IiwidHJhY2VJZCI6ImIzYzdmYzc3OWM0OTgxNDlhOWM0YTAwMGE1NDgyYTk5In0=" />
+              <option name="bodyString" value="{&#10;  &quot;error&quot;: &quot;company with ID '78711328' does not exist&quot;,&#10;  &quot;traceId&quot;: &quot;b3c7fc779c498149a9c4a000a5482a99&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="3" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Tue, 14 Jan 2025 17:04:00 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="98" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b533b1cd-420e-4d5d-88b8-388b69c9346f" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;error&quot;:&quot;company with ID '78711328' does not exist&quot;,&quot;traceId&quot;:&quot;b3c7fc779c498149a9c4a000a5482a99&quot;}" />
+              <option name="size" value="98" />
+              <option name="time" value="5" />
             </responseState>
           </option>
           <option name="workspaceId" value="7df6c949-70c2-4aa8-90a2-d37118f20fdc" />
