@@ -56,7 +56,7 @@ func main() {
 			})
 		}))
 		r.Use(cors.New(cors.Config{
-			AllowOrigins:     []string{"https://api.tadam.space"},
+			AllowOrigins:     []string{"https://portal.tadam.space"},
 			AllowMethods:     []string{"POST"},
 			AllowHeaders:     []string{"Origin"},
 			ExposeHeaders:    []string{"Content-Length"},
