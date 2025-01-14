@@ -50,7 +50,7 @@ func main() {
 		r.Use(gin.Logger())
 		r.Use(gin.CustomRecovery(func(c *gin.Context, recovered interface{}) {
 			c.AbortWithStatusJSON(http.StatusInternalServerError, gin.H{
-				"error": "an panic occurred, request aborted",
+				"error": "a panic occurred, request aborted",
 			})
 		}))
 	}

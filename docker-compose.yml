@@ -15,6 +15,14 @@ services:
     env_file:
       - .env
 
+  portal:
+    build: portal
+    restart: always
+    networks:
+      - ts
+    ports:
+      - "9918:3000"
+
   db:
     image: mariadb:10.11.7
     restart: always
@@ -38,7 +46,7 @@ services:
     environment:
       - PMA_HOST=db
     ports:
-      - "9919:80"
+      - "9920:80"
     depends_on:
       - db
 
@@ -69,7 +77,7 @@ services:
     restart: always
     command: ["--config", "/etc/jaeger/config.yml"]
     ports:
-      - "9918:16686"  # Jaeger UI
+      - "9919:16686"  # Jaeger UI
 #      - "8086:14268"  # Jaeger OTLP endpoint
 #      - "8087:4317"    # OTLP gRPC traces
 #      - "8088:4318"    # OTLP HTTP traces
