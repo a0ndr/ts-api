@@ -5,14 +5,12 @@ import (
 	"errors"
 	"git.sr.ht/~aondrejcak/ts-api/endpoints/payments"
 	"git.sr.ht/~aondrejcak/ts-api/kernel"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"log"
-	"net/http"
-	"time"
-
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
+	"log"
+	"net/http"
 
 	"git.sr.ht/~aondrejcak/ts-api/endpoints"
 	"git.sr.ht/~aondrejcak/ts-api/middleware"
@@ -55,17 +53,7 @@ func main() {
 				"error": "a panic occurred, request aborted",
 			})
 		}))
-		r.Use(cors.New(cors.Config{
-			AllowOrigins:     []string{"https://portal.tadam.space"},
-			AllowMethods:     []string{"POST"},
-			AllowHeaders:     []string{"Origin"},
-			ExposeHeaders:    []string{"Content-Length"},
-			AllowCredentials: true,
-			AllowOriginFunc: func(origin string) bool {
-				return origin == "https://portal.ondrejcak.sk"
-			},
-			MaxAge: 12 * time.Hour,
-		}))
+		r.Use(cors.Default())
 	}
 
 	r.Use(otelgin.Middleware(art.ServiceName))
