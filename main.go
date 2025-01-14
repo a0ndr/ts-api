@@ -5,14 +5,11 @@ import (
 	"errors"
 	"git.sr.ht/~aondrejcak/ts-api/endpoints/payments"
 	"git.sr.ht/~aondrejcak/ts-api/kernel"
+	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 	"log"
 	"net/http"
-	"time"
-
-	"github.com/gin-contrib/cors"
-	"github.com/gin-gonic/gin"
-	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
 
 	"git.sr.ht/~aondrejcak/ts-api/endpoints"
 	"git.sr.ht/~aondrejcak/ts-api/middleware"
@@ -55,15 +52,15 @@ func main() {
 				"error": "a panic occurred, request aborted",
 			})
 		}))
-		r.Use(cors.New(cors.Config{
-			AllowOrigins:     []string{"https://portal.tadam.space"},
-			AllowMethods:     []string{"POST", "OPTIONS"},
-			AllowHeaders:     []string{"Content-Type"},
-			ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
-			AllowCredentials: true,
-			MaxAge:           7 * time.Hour * 24,
-			AllowAllOrigins:  false,
-		}))
+		//r.Use(cors.New(cors.Config{
+		//	AllowOrigins:     []string{"https://portal.tadam.space"},
+		//	AllowMethods:     []string{"POST", "OPTIONS"},
+		//	AllowHeaders:     []string{"Content-Type"},
+		//	ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
+		//	AllowCredentials: true,
+		//	MaxAge:           7 * time.Hour * 24,
+		//	AllowAllOrigins:  false,
+		//}))
 	}
 
 	r.Use(otelgin.Middleware(art.ServiceName))
