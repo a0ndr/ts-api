@@ -9,6 +9,30 @@ services:
     ports:
       - "8081:3306"
 
+  portal:
+    build: portal
+    restart: always
+    networks:
+      - ts
+    ports:
+      - "9918:80"
+    volumes:
+      - ./portal/src:/var/www/html
+    environment:
+      - ADMIN_API_URL=http://172.17.0.1:9917
+
+  admin:
+    build: admin
+    restart: always
+    networks:
+      - ts
+    ports:
+      - "9919:80"
+    volumes:
+      - ./admin:/var/www/html
+    environment:
+      - ADMIN_API_URL=http://172.17.0.1:9917
+
   pma:
     image: phpmyadmin
     environment:

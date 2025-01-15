@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"errors"
+	"git.sr.ht/~aondrejcak/ts-api/endpoints/admin"
 	"git.sr.ht/~aondrejcak/ts-api/endpoints/payments"
 	"git.sr.ht/~aondrejcak/ts-api/kernel"
 	"github.com/gin-gonic/gin"
@@ -18,6 +19,7 @@ import (
 func main() {
 	art := kernel.LoadConfig()
 	art.Context = context.Background()
+	art.PrintConfig()
 
 	if art.DeploymentEnvironment == "production" {
 		log.Printf(" === RUNNING IN PRODUCTION MODE ===")
@@ -88,6 +90,8 @@ func main() {
 	r.POST("/authorize", endpoints.Authorize)
 	r.POST("/callback", endpoints.Callback_)
 
+	admin.RegisterController(r)
+
 	authorized := r.Group("/")
 	authorized.Use(middleware.TokenMiddleware())
 	{
@@ -101,6 +105,8 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"status": "ok"})
 	})
 	r.GET("/metrics", gin.WrapH(promhttp.Handler()))
+
+	art.Seed()
 
 	err = r.Run(art.Host)
 	if err != nil {

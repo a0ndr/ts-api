@@ -38,9 +38,7 @@ func (art *AppRuntime) PrepareDatabase() error {
 
 	_ = db.AutoMigrate(&models.Token{})
 	_ = db.AutoMigrate(&models.Company{})
-	//db.AutoMigrate(&models.Policy{})
-	//db.AutoMigrate(&models.Role{})
-	//db.AutoMigrate(&models.Admin{})
+	_ = db.AutoMigrate(&models.Admin{})
 	_ = db.AutoMigrate(&models.Payment{})
 
 	art.DatabaseClient = db

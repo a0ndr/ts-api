@@ -12,5 +12,6 @@ FROM golang AS final
 
 WORKDIR /app
 COPY --from=build /app/dist/app .
+COPY ./start.sh .
 
-ENTRYPOINT ["/app/app"]
+ENTRYPOINT ["/app/start.sh"]
